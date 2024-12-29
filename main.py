@@ -24,9 +24,10 @@ import yaml
 from mirai import Mirai, WebSocketAdapter, GroupMessage, Image, At, Startup, FriendMessage, Shutdown, MessageChain
 
 from plugins.toolkits import newLogger, random_str, get_system_info
+from plugins.mp import mp
 from run import aiReply, voiceReply, nudgeReply, wikiHelper, imgSearch, extraParts, wReply, groupManager, \
     musicShare, LiveMonitor, aronaapi, groupGames, musicpick, scheduledTasks, appCard, aiDraw, starRail, bangumi, \
-    draftBottle, galgame, character_identify, wifeyouwant, onebot_fun
+    draftBottle, galgame, character_identify, wifeyouwant, cmlWeatherRun, cmlEmbyRun, onebot_fun
 
 
 # 为了实现黑名单和群开关功能，继承webSocketAdapter类
@@ -472,7 +473,10 @@ if __name__ == '__main__':
                 wordCloud.main(bot, logger)
             except Exception as e:
                 logger.error(e)
-                logger.error("词云功能依赖未安装，请使用更新代码-补全依赖")
+                logger.error("词云功能无法启用，请使用更新代码-补全依赖")
+            mp.main(bot, logger)
+            cmlWeatherRun.main(bot, logger)
+            cmlEmbyRun.main(bot, logger)
             groupGames.main(bot, logger)
             musicpick.main(bot, logger)
             appCard.main(bot, logger)

@@ -11,9 +11,9 @@ gemini:                          #谷歌的gemini api，支持多key，在https:
 geminimodel: "gemini-1.5-flash"  #gemini默认的模型，不知道是啥就别动。可切换为gemini-2.0-flash-exp，更好效果。
 openaiSettings:                  #openai官方的apikey
   openai-keys:
-    - sk-Mxxxxxxxxxxx
-  openai-model: "gpt-3.5-turbo"  #调用openai api对应的模型，前提：在settings.yaml默认模型已经设置为gpt3.5，并配置了apikey
-  openai-transit: ""             #你自己的chatGPT中转站，你最好知道这是什么，否则就不要动。
+  - sk-kqDuLErwH5oEclbgHt6KWivDL86YRm6CCWn6HjK7dufYiG7y
+  openai-model: gpt-4o-mini      #调用openai api对应的模型，前提：在settings.yaml默认模型已经设置为gpt3.5，并配置了apikey
+  openai-transit: https://api.chatanywhere.tech
 sparkAI:                         #讯飞星火
   apiKey: ""                     #在https://console.xfyun.cn/services/cbm申请，并复制对应key和secret，注意，免费的是lite版
   apiSecret: ""
