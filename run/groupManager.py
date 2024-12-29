@@ -19,6 +19,7 @@ from plugins.SignPicMaker import get_user_image_url, signPicMaker
 from plugins.setuModerate import setuModerate
 from plugins.weatherQuery import querys
 from run.aiReply import CListen
+from run.authentication import authentication, delete_key
 
 
 def main(bot, config, moderateKey, logger):
@@ -819,24 +820,22 @@ def main(bot, config, moderateKey, logger):
         global userdict
         if str(event.message_chain).startswith("授权#") and (event.group.id == mainGroup or event.sender.id == master):
             try:
-                if event.sender.id == master:
+                if event.sender.id == master or authentication(event.sender.id):
                     setN = str(masterPermissionDays)
                     fsf = 0
+                    if authentication(str(event.sender.id)):
+                        fsf = 1
                 else:
-                    if str(event.sender.id) != str(event.message_chain).split("#")[1]:
-                        await bot.send(event, "不匹配的账号，请发送 授权#你自己的QQ")
-                        return
-                    setN = str(userSelfPermissonDays)
-                    fsf = 1
+                    await bot.send(event, "抱歉，你没有权限授权哦")
 
             except:
                 return
 
             userId = str(event.message_chain).split("#")[1]
-            if userId in userdict:
+            if authentication(userId):
                 data = userdict.get(userId)
-                if "selfAdded" in data and fsf == 1:
-                    await bot.send(event, "拒绝授权，您已为自己授权过", True)
+                if fsf == 1:
+                    await bot.send(event, "你已经有权限啦，不用再次授权咯！！！", True)
                     return
                 data["sts"] = str(int(data.get("sts")) + int(setN))
                 if fsf == 1:
@@ -856,6 +855,30 @@ def main(bot, config, moderateKey, logger):
                 await bot.send_friend_message(int(userId), "授权完成,开放功能权限。")
             else:
                 await bot.send_friend_message(int(userId), "授权完成")
+
+    @bot.on(GroupMessage)
+    async def accessCancel(event: GroupMessage):
+        global userdict
+        flag = False
+        if str(event.message_chain).startswith("取消授权#") and (event.group.id == mainGroup or event.sender.id == master):
+            try:
+                if event.sender.id == master or authentication(event.sender.id):
+                    flag = True
+                else:
+                    await bot.send(event, "抱歉，你没有权限授权哦")
+
+            except:
+                return
+
+            userId = str(event.message_chain).split("#")[1]
+            if flag:
+                res = delete_key(userId)
+                if res:
+                    await bot.send(event, "取消授权完成")
+                else:
+                    await bot.send(event, "该用户本来就没有权限！！！")
+            else:
+                return
 
     @bot.on(NewFriendRequestEvent)
     async def allowStranger(event: NewFriendRequestEvent):
