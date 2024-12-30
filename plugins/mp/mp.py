@@ -470,6 +470,7 @@ async def sub_start_search(bot, event, logger, user_id):
     if not message_text.startswith("mp订阅新增"):
         return
 
+    await check_token()
     query = message_text.replace("mp订阅新增", "").strip()
     if not query:
         await bot.send(event, "请提供有效的搜索内容！例如【mp订阅新增 乡村爱情】")
@@ -551,6 +552,7 @@ async def sub_cancel_start_search(bot, event, logger, user_id):
     if not message_text.startswith("mp订阅删除"):
         return
 
+    await check_token()
     query = message_text.replace("mp订阅删除", "").strip()
     if not query:
         await bot.send(event, "请提供有效的内容！例如【mp订阅删除 乡村爱情】")
@@ -601,6 +603,7 @@ async def sub_handle_reply(bot, event, logger, user_id):
     if not user_search_states[user_id]['is_waiting_for_reply'] or is_cancel_sub:
         return
 
+    await check_token()
     reply_text = str(event.message_chain)
     try:
         user_search_states[user_id]['timeout_task'].cancel()  # 取消当前超时任务
@@ -621,6 +624,7 @@ async def sub_cancel_handle_reply(bot, event, logger, user_id):
     if not user_search_states[user_id]['is_waiting_for_reply'] or (not is_cancel_sub):
         return
 
+    await check_token()
     reply_text = str(event.message_chain)
     user_search_states[user_id]['timeout_task'].cancel()  # 取消当前超时任务
     selects = re.split(r"[，,]", reply_text)
@@ -843,7 +847,6 @@ def main(bot, logger):
 
         # mp订阅功能
         if user_search_states[user_id]['reply_step'] == 0:
-            await check_token()
             start_time = time.time()
             await sub_start_search(bot, event, logger, user_id)
             end_time = time.time()
@@ -853,10 +856,8 @@ def main(bot, logger):
 
         # mp取消订阅
         if user_search_states[user_id]['reply_step'] == 0:
-            await check_token()
             await sub_cancel_start_search(bot, event, logger, user_id)
         else:
-            await check_token()
             await sub_cancel_handle_reply(bot, event, logger, user_id)
 
         # mp订阅查询
