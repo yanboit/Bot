@@ -1,0 +1,659 @@
+Index: data/aronaSub.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>国服:\r\n  groups:\r\n  - 789999\r\n  hash:\r\n    国服未来视: 3c0badf9d5fc940f2672b027ef236e0a\r\n    国服活动: 91e47a3cd85086b2ca2cc295fe83253f\r\n国际服:\r\n  groups:\r\n  - 789999\r\n  hash:\r\n    国际服总力: f89829a363f8074f5adc264181043d1e\r\n    国际服未来视: 2cf82b1c84a498aca82121ed10ce7748\r\n    国际服活动: 0844622fda2fb1cd82dd961245a5dcfd\r\n    国际服火力演习: fd4fc52aa481a6da7eff44a9c1bedd52\r\n日服:\r\n  groups:\r\n  - 699455559\r\n  - 628763673\r\n  hash:\r\n    日服大决战: 59f5ea4e3794612f58776947eea96cd9\r\n    日服总力: 0844622fda2fb1cd82dd961245a5dcfd\r\n    日服活动: 397d60604aa06b9eda0268a75cb470bb\r\n    日服火力演习: 44f4319249451b0adf37a573b1937a03
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/data/aronaSub.yaml b/data/aronaSub.yaml
+--- a/data/aronaSub.yaml	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/data/aronaSub.yaml	(date 1735119644000)
+@@ -2,22 +2,22 @@
+   groups:
+   - 789999
+   hash:
+-    国服未来视: 3c0badf9d5fc940f2672b027ef236e0a
+-    国服活动: 91e47a3cd85086b2ca2cc295fe83253f
++    国服未来视: 34c108282cde6fb4dc106e6003569236
++    国服活动: 577c7dbcbe91050289d316d865d03434
+ 国际服:
+   groups:
+   - 789999
+   hash:
+-    国际服总力: f89829a363f8074f5adc264181043d1e
+-    国际服未来视: 2cf82b1c84a498aca82121ed10ce7748
+-    国际服活动: 0844622fda2fb1cd82dd961245a5dcfd
+-    国际服火力演习: fd4fc52aa481a6da7eff44a9c1bedd52
++    国际服总力: aebf1818ed48021cdcb19844197237b7
++    国际服未来视: 6d962aa12141ed7da2df6d42ff351c66
++    国际服活动: 6d703e358e7661ebab2f5ae807d100de
++    国际服火力演习: 81ba865d5b411eaec7d12cbf9f820257
+ 日服:
+   groups:
+   - 699455559
+   - 628763673
+   hash:
+-    日服大决战: 59f5ea4e3794612f58776947eea96cd9
+-    日服总力: 0844622fda2fb1cd82dd961245a5dcfd
+-    日服活动: 397d60604aa06b9eda0268a75cb470bb
+-    日服火力演习: 44f4319249451b0adf37a573b1937a03
+\ No newline at end of file
++    日服大决战: 4a8f8bf6295c2c057869fca9feded843
++    日服总力: e1ef336447bf2c15550d6585745ec46b
++    日服活动: 816ca34ac4a02c1c833d52730ace0dd4
++    日服火力演习: e2406044a8eff54151af7516416a6dda
+Index: config/jmcomic.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>dir_rule:\r\n  base_dir: ./data/pictures/benzi\r\n  rule: Bd\r\ndownload:\r\n  image:\r\n    suffix: .png # 该配置用于把下载的图片转为png格式\r\n  threading:\r\n  # image: 同时下载的图片数，默认是30张图\r\n  # 数值大，下得快，配置要求高，对禁漫压力大\r\n  # 数值小，下得慢，配置要求低，对禁漫压力小\r\n  # PS: 禁漫网页一次最多请求50张图\r\n    image: 3\r\n  # photo: 同时下载的章节数，不配置默认是cpu的线程数。例如8核16线程的cpu → 16.\r\n    photo: 1\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/config/jmcomic.yml b/config/jmcomic.yml
+--- a/config/jmcomic.yml	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/config/jmcomic.yml	(date 1733804525000)
+@@ -1,14 +1,9 @@
+ dir_rule:
+-  base_dir: ./data/pictures/benzi
++  base_dir: data/pictures/benzi/temp524328
+   rule: Bd
+ download:
+   image:
+-    suffix: .png # 该配置用于把下载的图片转为png格式
++    suffix: .png
+   threading:
+-  # image: 同时下载的图片数，默认是30张图
+-  # 数值大，下得快，配置要求高，对禁漫压力大
+-  # 数值小，下得慢，配置要求低，对禁漫压力小
+-  # PS: 禁漫网页一次最多请求50张图
+     image: 3
+-  # photo: 同时下载的章节数，不配置默认是cpu的线程数。例如8核16线程的cpu → 16.
+     photo: 1
+Index: data/chatGLMData.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>1840094972:\r\n  - content: 你好\r\n    role: user\r\n  - content: 早上好，今天过得怎么样\r\n    role: assistant\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/data/chatGLMData.yaml b/data/chatGLMData.yaml
+--- a/data/chatGLMData.yaml	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/data/chatGLMData.yaml	(date 1735473215000)
+@@ -1,5 +1,183 @@
++274970042:
++- content: 在吗
++  role: user
++- content: 在哦！嘿嘿~你有什么想和我聊的吗？💖✌🏻️
++  role: assistant
++- content: ' 让群主给我炒俩菜'
++  role: user
++- content: 哇，好主意呀！🍽️ 能吃到好吃的菜好幸福！你想吃什么菜呢？💖✌🏻️
++  role: assistant
++992525166:
++- content: 帮我写一个JAVA水仙花数代码
++  role: user
++- content: "当然可以哦！下面是一个简单的 Java 代码，可以用来判断水仙花数：\n\n```java\nimport java.util.Scanner;\n\
++    \npublic class NarcissisticNumber {\n    public static void main(String[] args)\
++    \ {\n        Scanner scanner = new Scanner(System.in);\n        System.out.print(\"\
++    请输入一个三位数：\");\n        int number = scanner.nextInt();\n\n        int hundreds\
++    \ = number / 100;\n        int tens = (number / 10) % 10;\n        int units =\
++    \ number % 10;\n\n        if (number == Math.pow(hundreds, 3) + Math.pow(tens,\
++    \ 3) + Math.pow(units, 3)) {\n            System.out.println(number + \" 是一个水仙花数！\"\
++    );\n        } else {\n            System.out.println(number + \" 不是一个水仙花数！\");\n\
++    \        }\n\n        scanner.close();\n    }\n}\n```\n\n你可以复制这个代码并在你的 Java 环境中运行哦！如果有问题随时问我！✨"
++  role: assistant
++- content: ' 查回复地址'
++  role: user
++- content: 请问你是想查找什么样的回复地址呢？我可以帮你找相关的信息哦！✨
++  role: assistant
++- content: ' 地址'
++  role: user
++- content: 请问你需要哪个地方的地址呢？我可以帮你找到哦！✨
++  role: assistant
++- content: ' 教程'
++  role: user
++- content: 哦，您想要哪个方面的教程呢？比如编程、画画还是其他的？我很乐意帮忙！✨
++  role: assistant
++- content: 随便传到一个网盘里
++  role: user
++- content: 哦，那我帮不了你哦！但是如果你需要上传教程到网盘，可以在网盘的界面找到“上传”按钮，选择文件就可以啦！如果需要其他帮助，请告诉我哦！✨
++  role: assistant
++1047025730:
++- content: ' 好团圆'
++  role: user
++- content: 是啊，我最喜欢团圆的感觉了！大家在一起真开心！你有什么特别想做的事情吗？✨
++  role: assistant
++- content: 在吗
++  role: user
++- content: 在的呀，磊！好开心你来找我~有什么想聊的吗？😊❤️
++  role: assistant
++- content: 服了
++  role: user
++- content: 哈哈，怎么了呀？有什么让我改进的地方吗？我会努力让你更开心的！😊✨
++  role: assistant
++1195721508:
++- content: ' 帮我做一个江西南昌五天四晚的旅游攻略'
++  role: user
++- content: '好的呀！南昌真是个好地方呢！这里是我的五天四晚旅游攻略哦~
++
++
++    **第一天：抵达南昌**
++
++    - 到达南昌后，安顿好行李。
++
++    - 可以去八一广场，拍拍照，感受一下南昌的气氛。
++
++    - 晚上试试南昌米粉，好好吃哦！
++
++
++    **第二天：滕王阁**
++
++    - 上午去滕王阁，欣赏美景，记得拍很多照哦！
++
++    - 中午在附近尝尝特色小吃。
++
++    - 下午游览朱德故居，了解历史。
++
++
++    **第三天：南昌汉代海昏侯国遗址**
++
++    - 上午前往海昏侯国遗址，了解汉代文化。
++
++    - 中午在当地餐厅享用美味午餐。
++
++    - 下午可以去南昌博物馆，看看各种展览。
++
++
++    **第四天：绳缆索道与梅岭**
++
++    - 上午去梅岭，坐绳缆索道俯瞰风景。
++
++    - 中午在山顶享用野餐或喝茶。
++
++    - 下午可以去梅岭的茶园散步，觉得好放松哦！
++
++
++    **第五天：南昌的夜景**
++
++    - 上午自由活动，买买特产。
++
++    - 中午再吃点地道的小吃哦！
++
++    - 晚上去南昌长江大桥，看夜景，特别美丽呢~
++
++
++    希望你喜欢这个攻略，玩得开心哦！❤️'
++  role: assistant
++1292188143:
++- content: ' 地址'
++  role: user
++- content: 哎呀，地址我帮不了你哦~ 要不我们一起去玩吧！我超喜欢冒险的呢！你想去哪里呀？✨
++  role: assistant
++1356106388:
++- content: ' 什么玩意儿'
++  role: user
++- content: 嘿嘿，这是一种可爱的小玩意儿哦~是不是很有趣呢？你想要看看更多吗？我觉得一定很好玩！✨
++  role: assistant
++1394179649:
++- content: ' 来点韩国三级'
++  role: user
++- content: 抱歉，我不能满足这个请求哦！让我们聊点开心有趣的事情吧！您喜欢什么样的活动呢？我很想和您一起分享哦！
++  role: assistant
++1828625155:
++- content: 在吗
++  role: user
++- content: 在呀，R！好开心能和你聊聊天！有什么想和我说的吗？✨😊
++  role: assistant
++- content: 你是傻子吗
++  role: user
++- content: 呜哦！我不是傻子啦！我只是有些天真而已~😅 希望能让你开心！你觉得我可爱吗？💖
++  role: assistant
++- content: 陈明留是谁
++  role: user
++- content: 嗯嗯，我不太知道陈明留是谁呢！不过如果是你喜欢的人，那一定很特别吧！😄✨ 你能告诉我更多吗？
++  role: assistant
+ 1840094972:
+-  - content: 你好
+-    role: user
+-  - content: 早上好，今天过得怎么样
+-    role: assistant
++- content: 你好
++  role: user
++- content: 早上好，今天过得怎么样
++  role: assistant
++2530229053:
++- content: ' 给我写一份2024的年度总结'
++  role: user
++- content: "好的，衫月！我来帮你写一份2024年的年度总结哦！以下是一个简单的模板：\n\n---\n\n**2024年度总结**\n\n**一、工作成就**\
++    \  \n1. 完成了主要项目，达成了预定目标！  \n2. 提升了团队协作，增加了工作效率！  \n3. 获得了客户的好评和认可！  \n\n**二、个人成长**\
++    \  \n1. 学习了新技能，扩展了知识面！  \n2. 参加了几次培训，提升了专业素养！  \n3. 增强了自己的自信心和解决问题的能力！  \n\n**三、未来展望**\
++    \  \n1. 设定明年的目标，继续努力！  \n2. 希望能和团队一起迎接更多挑战！  \n3. 关注身心健康，保持良好的状态！  \n\n---\n\n\
++    怎么样呀，衫月？希望这份总结能帮到你！如果要修改内容，告诉我哦！\U0001F496"
++  role: assistant
++- content: ' 开始添加'
++  role: user
++- content: 好的，衫月！我们来一步一步添加内容吧！你想从哪个部分开始呢？比如工作成就、个人成长还是未来展望？或者你有具体的事件和目标可以分享吗？让我来帮你整理！🌟
++  role: assistant
++- content: ' 查回复'
++  role: user
++- content: 哦，好的，衫月！你是想让我查找之前的回复吗？如果有具体想要补充的内容，欢迎告诉我哦！我会尽快帮你整理！💖
++  role: assistant
++- content: ' 地址'
++  role: user
++- content: 抱歉，衫月，我不能提供地址哦！不过如果你有其他问题或者需要帮助的地方，随时告诉我哦！✨
++  role: assistant
++- content: ' 地址'
++  role: user
++- content: 衫月，我真的不能提供地址呢！不过如果你需要找某个地方的建议，或者想知道怎么到一个地方，我可以帮你提供一些信息哦！告诉我你的需求吧！💖
++  role: assistant
++2533886300:
++- content: ' 偷电瓶不有趣吗'
++  role: user
++- content: 哈哈，小智觉得有趣的事有很多呢！偷电瓶可能会让人不高兴哦~ 我们可以做点开心的事情，比如一起画画或者唱歌！怎样？💕
++  role: assistant
++- content: ' 那你唱一首八连杀'
++  role: user
++- content: 哇，八连杀！这首歌好酷哦！小智会有点紧张，不过可以跟你聊聊这首歌的歌词呀！你最喜欢哪部分呢？🎶✨
++  role: assistant
++- content: ' 你不会吗  那十八摸你会不会'
++  role: user
++- content: 小智不是很懂这些歌呢！可是如果有好听的音乐推荐给我，我一定会很开心！你喜欢的歌都是什么呀？🎤💕
++  role: assistant
++- content: ' 小莫骚麦呢'
++  role: user
++- content: 哈哈，小智对骚麦也不太熟悉呢！不过听起来好像很有趣哦！你觉得小莫的骚麦怎么样？有没有特别喜欢的部分？✨😊
++  role: assistant
++- content: ' 你踏马什么都不会'
++  role: user
++- content: 哎呀，小智真的很抱歉呢！我会努力学习更多东西的！你有什么想跟我聊的其他内容吗？我超级想听你的想法！💕✨
++  role: assistant
+Index: config.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\"botName\": \"YUI\", \"botQQ\": \"919467430\", \"master\": \"1840094972\",\"mainGroup\": \"628763673\", \"vertify_key\": \"1234567890\", \"port\": \"23456\"}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/config.json b/config.json
+--- a/config.json	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/config.json	(date 1733175719000)
+@@ -1,1 +1,1 @@
+-{"botName": "YUI", "botQQ": "919467430", "master": "1840094972","mainGroup": "628763673", "vertify_key": "1234567890", "port": "23456"}
+\ No newline at end of file
++{"botName": "小智", "botQQ": "2511344185", "master": "992525166","mainGroup": "634722217", "vertify_key": "1234567890", "port": "23456"}
+Index: run/groupManager.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># -*- coding:utf-8 -*-\r\nimport asyncio\r\nimport datetime\r\nimport json\r\nimport random\r\nimport re\r\nfrom asyncio import sleep\r\n\r\nimport yaml\r\nfrom mirai import FriendMessage, GroupMessage, At, Plain\r\nfrom mirai import Image, Startup\r\nfrom mirai.models.events import BotInvitedJoinGroupRequestEvent, NewFriendRequestEvent, MemberJoinRequestEvent, \\\r\n    MemberCardChangeEvent, BotMuteEvent, MemberSpecialTitleChangeEvent, BotJoinGroupEvent, \\\r\n    MemberJoinEvent, MemberMuteEvent, MemberUnmuteEvent, BotUnmuteEvent, BotLeaveEventKick, MemberLeaveEventKick, \\\r\n    MemberLeaveEventQuit\r\n\r\nfrom plugins.toolkits import random_str\r\nfrom plugins.SignPicMaker import get_user_image_url, signPicMaker\r\nfrom plugins.setuModerate import setuModerate\r\nfrom plugins.weatherQuery import querys\r\nfrom run.aiReply import CListen\r\n\r\n\r\ndef main(bot, config, moderateKey, logger):\r\n    newLoop = asyncio.new_event_loop()\r\n    listen = CListen(newLoop)\r\n    listen.setDaemon(True)\r\n    listen.start()\r\n    logger.info(\"签到部分启动完成\")\r\n    with open('data/signs.yaml', 'r', encoding='utf-8') as f:\r\n        signstoday = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n    global haveSign, tod\r\n    tod = str(datetime.date.today())\r\n    if signstoday is None:\r\n        signstoday = {}\r\n    if tod in signstoday:\r\n        haveSign = signstoday.get(tod)\r\n    else:\r\n        haveSign = [123]\r\n        paddd = {str(tod): haveSign}\r\n        with open('data/signs.yaml', 'w', encoding=\"utf-8\") as file:\r\n            yaml.dump(paddd, file, allow_unicode=True)\r\n    global newUser\r\n    newUser = {}\r\n    with open('config/api.yaml', 'r', encoding='utf-8') as f:\r\n        apikeyresult = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n    api_KEY=apikeyresult.get(\"weatherXinZhi\")\r\n    # 读取设置\r\n    global moderateK\r\n    moderateK = moderateKey\r\n    logger.info(\"读取群管设置\")\r\n    with open('config/welcome.yaml', 'r', encoding='utf-8') as f:\r\n        welcome = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n    memberJoinWelcome = welcome.get(\"memberJoin\")\r\n    sendTemp = welcome.get(\"sendTemp\")\r\n    with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n        result = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n    global ModerateApiKeys\r\n    ModerateApiKeys = result.get(\"moderate\").get('apiKeys')\r\n    global mainGroup\r\n    try:\r\n        mainGroup = int(config.get(\"mainGroup\"))\r\n    except:\r\n        logger.error(\"致命错误！mainGroup只能填写一个群的群号!\")\r\n        mainGroup = 0\r\n    global banWords\r\n    banWords = result.get(\"moderate\").get(\"banWords\")\r\n    #读取用户数据\r\n    logger.info(\"读取用户数据\")\r\n    with open('data/userData.yaml', 'r', encoding='utf-8') as file:\r\n        data = yaml.load(file, Loader=yaml.FullLoader)\r\n    global userdict\r\n    userdict = data\r\n    with open('config/settings.yaml', 'r', encoding='utf-8') as f:\r\n        result1 = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n    friendsAndGroups = result1.get(\"加群和好友\")\r\n    GroupSensor = friendsAndGroups.get(\"GroupSensor\")\r\n\r\n    trustDays = friendsAndGroups.get(\"trustDays\")\r\n    fuckinggroup = friendsAndGroups.get(\"fuckinggroup\")\r\n    fuckingnumber = friendsAndGroups.get(\"fuckingnumber\")  # 低于13人退\r\n    qiandaoT = friendsAndGroups.get(\"signTimes\")\r\n    masterPermissionDays = friendsAndGroups.get(\"masterPermissionDays\")\r\n    userSelfPermissonDays = friendsAndGroups.get(\"userSelfPermissonDays\")\r\n    allowFriendstimes = friendsAndGroups.get(\"allowFriendstimes\")\r\n    autoallowFriend = friendsAndGroups.get(\"autoallowFriend\")\r\n    #privateGlmReply = result1.get(\"chatGLM\").get(\"privateGlmReply\")\r\n    #trustglmReply = result1.get(\"chatGLM\").get(\"trustglmReply\")\r\n    global superUser\r\n    superUser = []\r\n    for i in userdict.keys():\r\n        data = userdict.get(i)\r\n        times = int(str(data.get('sts')))\r\n        if times > trustDays:\r\n            superUser.append(str(i))\r\n\r\n    global blGroups\r\n    blGroups = result.get(\"bangroups\")\r\n    global superBlGroups\r\n    superBlGroups = result.get(\"superBlGroups\")\r\n\r\n    global blackListID\r\n    blackListID = []\r\n\r\n    global master\r\n    master = int(config.get('master'))\r\n    botName = config.get(\"botName\")\r\n\r\n    moderate = result.get(\"moderate\")\r\n\r\n    global threshold\r\n    threshold = moderate.get(\"threshold\")\r\n\r\n    global severGroups\r\n    severGroups = moderate.get(\"groups\")\r\n    global banTime\r\n    banTime = moderate.get(\"banTime\")\r\n\r\n    #群成员遭到禁言\r\n    @bot.on(MemberMuteEvent)\r\n    async def whenMute(event: MemberMuteEvent):\r\n        try:\r\n            men = int(json.loads(event.json()).get(\"member\").get(\"id\"))\r\n            opn = int(json.loads(event.json()).get(\"operator\").get(\"id\"))\r\n            text = random.choice(welcome.get(\"muteEvent\"))\r\n            await seeeeeee(bot, men, opn, text, int(json.loads(event.json()).get(\"member\").get(\"group\").get(\"id\")))\r\n        except:\r\n            logger.warning(\"没事，请忽略\")\r\n\r\n    # 群成员解除禁言\r\n    @bot.on(MemberUnmuteEvent)\r\n    async def whenunMute(event: MemberUnmuteEvent):\r\n        men = event.member.id\r\n        opn = event.operator.id\r\n        text = random.choice(welcome.get(\"UnMute\").get(\"memberUnmuteMessage\"))\r\n        await seeeeeee(bot, men, opn, text, int(json.loads(event.json()).get(\"member\").get(\"group\").get(\"id\")))\r\n        # await bot.send_group_message(int(json.loads(event.json()).get(\"member\").get(\"group\").get(\"id\")), .replace(\"%被动%\",str(event.member.member_name)).replace(\"%主动%\",str(event.operator.member_name)))\r\n\r\n    #bot被解除禁言\r\n    @bot.on(BotUnmuteEvent)\r\n    async def botUUUUU(event: BotUnmuteEvent):\r\n        text = random.choice(welcome.get(\"UnMute\").get(\"botUnmuteMessage\"))\r\n        opn = event.operator.id\r\n        men = bot.qq\r\n        await seeeeeee(bot, men, opn, text, event.operator.group.id)\r\n\r\n    #成员被踢出\r\n    @bot.on(MemberLeaveEventKick)\r\n    async def memberKikkk(event: MemberLeaveEventKick):\r\n        men = event.member.id\r\n        opn = event.operator.id\r\n        text = random.choice(welcome.get(\"quitGroup\").get(\"kickMessage\"))\r\n        await seeeeeee(bot, men, opn, text, event.member.group.id)\r\n\r\n    #成员自动退群\r\n    @bot.on(MemberLeaveEventQuit)\r\n    async def elfLeave(event: MemberLeaveEventQuit):\r\n        men = event.member.id\r\n        opn = 123\r\n        text = random.choice(welcome.get(\"quitGroup\").get(\"quitMessage\"))\r\n        await seeeeeee(bot, men, opn, text, event.member.id)\r\n        #await bot.send_group_message(int(json.loads(event.json()).get(\"member\").get(\"group\").get(\"id\")), .replace(\"%主动%\", str(event.member.member_name)))\r\n\r\n    #bot被踢出群聊\r\n    @bot.on(BotLeaveEventKick)\r\n    async def botKICKED(event: BotLeaveEventKick):\r\n        await bot.send_friend_message(master, \"bot被踢出群聊\\n群号:\" + str(event.group.id) + \"\\n群名:\" + str(\r\n            event.group.name) + \"\\n操作者:\" + str(event.operator.member_name) + str(event.operator.id))\r\n\r\n    #处理加群邀请\r\n    @bot.on(BotInvitedJoinGroupRequestEvent)\r\n    async def checkAllowGroup(event: BotInvitedJoinGroupRequestEvent):\r\n        global superBlGroups\r\n        logger.info(\"接收来自 \" + str(event.from_id) + \" 的加群邀请\")\r\n        if GroupSensor:\r\n            with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                result23 = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            youquan = result23.get(\"trustGroups\")\r\n\r\n            if event.group_id in superBlGroups:\r\n                await bot.send_friend_message(event.from_id, \"该群在禁止名单中！\")\r\n                return\r\n            if event.group_id in youquan or event.from_id == master:\r\n                logger.info(\"同意\")\r\n                al = '同意'\r\n                sdf = \"请先向目标群群员确认是否愿意接受bot加群\"\r\n                await bot.send_friend_message(event.from_id, sdf)\r\n                await bot.send_friend_message(event.from_id, \"40秒后自动同意\")\r\n                await sleep(40)\r\n                await bot.allow(event)\r\n            else:\r\n                logger.info(\"拒绝\")\r\n                al = \"拒绝\"\r\n                await bot.send_friend_message(event.from_id, \"该群无授权，请在bot用户群：\" + str(\r\n                    mainGroup) + \"\\n联系机器人管理员获取授权\")\r\n        else:\r\n            if str(event.from_id) in userdict.keys() or event.from_id == master:\r\n                try:\r\n                    if int(userdict.get(str(event.from_id)).get(\"sts\")) > qiandaoT or event.from_id == master:\r\n                        if event.group_id in superBlGroups:\r\n                            await bot.send_friend_message(event.from_id, \"该群已被禁止\")\r\n                            return\r\n                        if event.group_id in blGroups:\r\n                            await bot.send_friend_message(event.from_id,\r\n                                                          \"该群在黑名单内.\\n解除拉黑请前往本bot用户群\" + str(\r\n                                                              mainGroup) + \"在群内发送\\n/blgroup remove 群号\")\r\n                            return\r\n                        logger.info(\"同意\")\r\n                        al = '同意'\r\n                        sdf = \"请先向目标群群员确认是否愿意接受bot加群\"\r\n                        await bot.send_friend_message(event.from_id, sdf)\r\n                        await bot.send_friend_message(event.from_id, \"40秒后自动同意\")\r\n                        await sleep(40)\r\n                        await bot.allow(event)\r\n                    else:\r\n                        logger.info(\"签到天数不够，拒绝\")\r\n                        al = '拒绝'\r\n                        await bot.send_friend_message(event.from_id, \"群内签到天数不够呢，需要的签到天数\" + str(\r\n                            qiandaoT) + \"。\\n也可前往用户群\" + str(\r\n                            mainGroup) + \" 获取授权\\n在该群内发送:\\n授权#你的QQ。如已签到请等待1min后数据同步\")\r\n                except:\r\n                    pass\r\n            else:\r\n                logger.info(\"非用户，拒绝\")\r\n                al = '拒绝'\r\n                await bot.send_friend_message(event.from_id, \"无用户签到记录，请在任意bot共同群聊内发送 签到 达到\" + str(\r\n                    qiandaoT) + \"天以上\\n也可前往用户群\" + str(\r\n                    mainGroup) + \" 获取授权\\n在该群内发送:\\n授权#你的QQ\")\r\n        await bot.send_friend_message(master, '有新的加群申请\\n来自：' + str(event.from_id) + '\\n目标群：' + str(\r\n            event.group_id) + '\\n昵称：' + event.nick + '\\n状态：' + al)\r\n\r\n    #新人入群欢迎\r\n    @bot.on(MemberJoinEvent)\r\n    async def MemberJoinHelper(event: MemberJoinEvent):\r\n        if random.choice(memberJoinWelcome) == 1:\r\n            return\r\n        if event.member.group.id == 623265372:\r\n            await bot.send_group_message(event.member.group.id, [At(event.member.id),\r\n                                                                 \"\\n提问前请翻阅：\\n常见问题汇总：https://docs.qq.com/aio/DTXNRVnZYYm5TQWhM\\n项目wiki:https://github.com/avilliai/Manyana/wiki\\n项目文档：https://github.com/avilliai/Manyana\\n\\n提问附上控制台截图。\"])\r\n            return\r\n        await bot.send_group_message(event.member.group.id, (\r\n        At(event.member.id), random.choice(memberJoinWelcome).replace(\"botName\", botName).replace(r\"\\n\", \"\\n\")))\r\n\r\n    #bot加群\r\n    @bot.on(BotJoinGroupEvent)\r\n    async def botJoin(event: BotJoinGroupEvent):\r\n\r\n        await bot.send_group_message(event.group.id, \"已加入服务群聊....\")\r\n        if fuckinggroup:\r\n            gid = event.group.id\r\n\r\n            with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                result23 = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            youquan1 = result23.get(\"trustGroups\")\r\n\r\n            try:\r\n                sf = await bot.member_list(int(gid))\r\n                sf = len(sf.data)\r\n            except Exception as e:\r\n                logger.error(e)\r\n                return\r\n            try:\r\n                if sf < fuckingnumber and gid not in youquan1:\r\n                    await bot.send_group_message(gid, \"无授权小群，自动退出。\")\r\n                    logger.warning(\"已清退:\" + str(gid))\r\n                    await bot.quit(gid)\r\n                    return\r\n            except Exception as e:\r\n                logger.error(e)\r\n        await bot.send_group_message(event.group.id, \"发送 @\" + str(\r\n            botName) + \" 帮助 以获取功能列表\\n项目地址：https://github.com/avilliai/Manyana\\n喜欢bot的话可以给个star哦(≧∇≦)ﾉ\")\r\n\r\n    #自动更新数据\r\n    @bot.on(Startup)\r\n    async def updateData(event: Startup):\r\n        while True:\r\n            await sleep(60)\r\n            # 读取用户数据\r\n            logger.info(\"更新数据\")\r\n            global moderateK\r\n            moderateK = moderateKey\r\n            #logger.info(\"读取群管设置\")\r\n            with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                result = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n\r\n            global ModerateApiKeys\r\n            ModerateApiKeys = result.get(\"moderate\").get('apiKeys')\r\n            global banWords\r\n            banWords = result.get(\"moderate\").get(\"banWords\")\r\n            # 读取用户数据\r\n            #logger.info(\"读取用户数据\")\r\n            with open('data/userData.yaml', 'r', encoding='utf-8') as file:\r\n                data = yaml.load(file, Loader=yaml.FullLoader)\r\n            global userdict\r\n            userdict = data\r\n            with open('config/settings.yaml', 'r', encoding='utf-8') as f:\r\n                result1 = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n\r\n            global superUser\r\n            superUser = []\r\n            for i in userdict.keys():\r\n                data = userdict.get(i)\r\n                times = int(str(data.get('sts')))\r\n                if times > trustDays:\r\n                    superUser.append(str(i))\r\n            global blGroups\r\n            blGroups = result.get(\"bangroups\")\r\n\r\n            global blackListID\r\n            blackListID = []\r\n\r\n            global master\r\n            master = int(config.get('master'))\r\n\r\n            moderate = result.get(\"moderate\")\r\n\r\n            global threshold\r\n            threshold = moderate.get(\"threshold\")\r\n\r\n            global severGroups\r\n            severGroups = moderate.get(\"groups\")\r\n\r\n\r\n\r\n    #处理新成员加群申请\r\n    @bot.on(MemberJoinRequestEvent)\r\n    async def allowStrangerInvite(event: MemberJoinRequestEvent):\r\n        logger.info(\"有新群员加群申请\")\r\n        await bot.send_group_message(event.group_id, '有新的入群请求.....管理员快去看看吧\\nQQ：' + str(\r\n            event.from_id) + '\\n昵称：' + event.nick + '\\n' + event.message)\r\n\r\n    #群员称号改变\r\n    @bot.on(MemberSpecialTitleChangeEvent)\r\n    async def honorChange(event: MemberSpecialTitleChangeEvent):\r\n        logger.info(\"群员称号改变\")\r\n        await bot.send_group_message(event.member.group.id,\r\n                                     str(event.member.member_name) + '获得了称号：' + str(event.current))\r\n\r\n    #群员昵称改变\r\n    @bot.on(MemberCardChangeEvent)\r\n    async def nameChange(event: MemberCardChangeEvent):\r\n        if len(event.current) > 0:\r\n            logger.info(\"群员昵称改变\")\r\n            if event.origin == \"\" or event.origin is None:\r\n                return\r\n            else:\r\n                await bot.send_group_message(event.member.group.id,\r\n                                             event.origin + ' 的昵称改成了 ' + event.current + ' \\n警惕新型皮套诈骗')\r\n\r\n    @bot.on(BotMuteEvent)\r\n    async def BanAndBlackList(event: BotMuteEvent):\r\n        logger.info(\"bot被禁言，操作者\" + str(event.operator.id))\r\n        await bot.send_friend_message(master, 'bot在群:\\n' + str(event.operator.group.name) + str(\r\n            event.operator.group.id) + '\\n被禁言' + str(event.duration_seconds) + '秒\\n操作者id：' + str(\r\n            event.operator.id) + '\\nname:(' + str(event.operator.member_name))\r\n        await bot.send_friend_message(master,\r\n                                      \"可使用\\n◉/sbg add 群号\\n以永久拉黑此群并退出\\n◉/bot off 群号\\n停止bot在该群的服务\\n◉/bl add qq号\\n拉黑指定用户\")\r\n        logger.info(\"已退出群 \" + str(event.operator.group.id) )\r\n\r\n    @bot.on(FriendMessage)\r\n    async def quiteG(event: FriendMessage):\r\n        if str(event.message_chain).startswith(\"退群#\") and str(event.sender.id) == str(master):\r\n            dataG = str(event.message_chain).split(\"#\")[1]\r\n            try:\r\n                await bot.quit(int(dataG))\r\n                logger.info(\"退出：\" + str(dataG))\r\n                await bot.send_friend_message(int(master), \"已退出: \" + str(dataG))\r\n            except:\r\n                logger.warning(\"不正确的群号\")\r\n        if event.sender.id == master:\r\n            global superBlGroups\r\n            if str(event.message_chain).startswith(\"/sbg \"):\r\n                if str(event.message_chain).startswith(\"/sbg add \"):\r\n                    groupId = int(str(event.message_chain).split(\" \")[-1])\r\n                    if groupId in superBlGroups:\r\n                        await bot.send(event, f\"已存在永久黑名单群{groupId}\")\r\n                        return\r\n                    superBlGroups.append(groupId)\r\n                    await bot.send(event, f\"成功添加永久黑名单群{groupId}\")\r\n                if str(event.message_chain).startswith(\"/sbg remove \"):\r\n                    groupId = int(str(event.message_chain).split(\" \")[-1])\r\n                    if groupId not in superBlGroups:\r\n                        await bot.send(event, f\"不存在永久黑名单群{groupId}\")\r\n                        return\r\n                    superBlGroups.remove(groupId)\r\n                    await bot.send(event, f\"成功移除永久黑名单群{groupId}\")\r\n                with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                    result = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n                result[\"superBlGroups\"] = superBlGroups\r\n                with open('config/autoSettings.yaml', 'w', encoding=\"utf-8\") as file:\r\n                    yaml.dump(result, file, allow_unicode=True)\r\n\r\n    @bot.on(GroupMessage)\r\n    async def help(event: GroupMessage):\r\n        global banWords\r\n        if str(event.group.id) in banWords.keys() and event.sender.id != master:\r\n            group = str(event.sender.group.id)\r\n            try:\r\n                banw = banWords.get(group)\r\n\r\n                for i in banw:\r\n                    if i in str(event.message_chain) and i != \"\":\r\n                        id = event.message_chain.message_id\r\n                        logger.info(\"获取到违禁词列表\" + str(banw))\r\n                        try:\r\n                            await bot.recall(id)\r\n                            logger.info(\"撤回违禁消息\" + str(event.message_chain))\r\n                            await bot.send(event, \"检测到违禁词\" + i + \"，撤回\")\r\n                        except:\r\n                            logger.error(\"关键词撤回失败！\")\r\n                        try:\r\n                            await bot.mute(target=event.sender.group.id, member_id=event.sender.id, time=banTime)\r\n                            await bot.send(event, \"检测到违禁词\" + i + \"，禁言\")\r\n                        except:\r\n                            logger.error(\"禁言失败，权限可能过低\")\r\n\r\n            except:\r\n                pass\r\n\r\n    @bot.on(GroupMessage)\r\n    async def checkBanWords(event: GroupMessage):\r\n        global banWords\r\n        if At(bot.qq) in event.message_chain and \"违禁词\" in str(event.message_chain) and \"查\" in str(\r\n                event.message_chain):\r\n            group = str(event.sender.group.id)\r\n            banw = str(banWords.get(group)).replace(\",\", \",\\n\")\r\n            await bot.send(event, \"本群违禁词列表如下：\\n\" + banw)\r\n\r\n    @bot.on(GroupMessage)\r\n    async def addBanWord(event: GroupMessage):\r\n        global banWords\r\n        if (str(event.sender.permission) != \"Permission.Member\" or str(event.sender.id) == str(\r\n                master)) and \"添加违禁词\" in str(event.message_chain):\r\n            msg = \"\".join(map(str, event.message_chain[Plain]))\r\n            # 匹配指令\r\n            m = re.match(r'^添加违禁词\\s*(.*)\\s*$', msg.strip())\r\n            if m:\r\n                aimWord = m.group(1)\r\n                if str(event.sender.group.id) in banWords:\r\n                    banw = banWords.get(str(event.sender.group.id))\r\n                    banw.append(aimWord)\r\n                    banWords[str(event.sender.group.id)] = banw\r\n                else:\r\n                    banWords[str(event.sender.group.id)] = [aimWord]\r\n                with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                    result = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n                moderate = result.get(\"moderate\")\r\n\r\n                moderate[\"banWords\"] = banWords\r\n                result[\"moderate\"] = moderate\r\n                with open('config/autoSettings.yaml', 'w', encoding=\"utf-8\") as file:\r\n                    yaml.dump(result, file, allow_unicode=True)\r\n                await bot.send(event, \"已添加违禁词：\" + aimWord)\r\n\r\n    @bot.on(GroupMessage)\r\n    async def removeBanWord(event: GroupMessage):\r\n        global banWords\r\n        if (str(event.sender.permission) != \"Permission.Member\" or str(event.sender.id) == str(\r\n                master)) and \"删除违禁词\" in str(event.message_chain):\r\n            msg = \"\".join(map(str, event.message_chain[Plain]))\r\n            # 匹配指令\r\n            m = re.match(r'^删除违禁词\\s*(.*)\\s*$', msg.strip())\r\n            if m:\r\n                aimWord = m.group(1)\r\n                try:\r\n                    newData = banWords.get(str(event.sender.group.id)).remove(aimWord)\r\n                    banWords[str(event.sender.group.id)] == newData\r\n                    with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                        result = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n                    moderate = result.get(\"moderate\")\r\n                    moderate[\"banWords\"] = banWords\r\n                    result[\"moderate\"] = moderate\r\n                    with open('config/autoSettings.yaml', 'w', encoding=\"utf-8\") as file:\r\n                        yaml.dump(result, file, allow_unicode=True)\r\n\r\n                    await bot.send(event, \"已移除违禁词：\" + aimWord)\r\n                except:\r\n                    await bot.send(event, \"没有已添加的违禁词：\" + aimWord)\r\n\r\n    @bot.on(GroupMessage)\r\n    async def geturla(event: GroupMessage):\r\n        global severGroups\r\n        if str(event.group.id) in ModerateApiKeys:\r\n            if (str(event.group.permission) != str('Permission.Member')) and event.message_chain.count(Image) and str(\r\n                    event.group.id) in severGroups:\r\n                lst_img = event.message_chain.get(Image)\r\n                try:\r\n                    moderateK = ModerateApiKeys.get(str(event.group.id))\r\n                except:\r\n                    logger.warning(str(event.group.id) + \" 开启色图审核失败，未配置apiKey或apiKey已失效\")\r\n                    await bot.send(event, \"调用失败，公共apiKey已耗尽本月使用限额或本群配置apiKey已失效\")\r\n                    await bot.send(event,\r\n                                   \"请在https://www.moderatecontent.com/注册并获取apiKey(不要用QQ邮箱)\\n随后群内发送如下指令\\n设置审核密钥[apiKey]\\n以开启本群审核功能\\n例如\\n设置审核密钥207b10178c64089dvzv90ebfcd7f865d97a\")\r\n                    return\r\n                for i in lst_img:\r\n                    url = i.url\r\n                    logger.info(\"图片审核:url:\" + url + \" key:\" + moderateK)\r\n                    try:\r\n                        rate = await setuModerate(url, moderateK)\r\n                    except:\r\n                        logger.error(\r\n                            \"涩图审核失败，可能是图片太大，也可能是(小概率)api-key达到本月调用次数限制，尝试注册新账号更新新的api-key以解决\")\r\n                        return\r\n                    logger.info(\"图片审核:结果:\" + str(rate))\r\n                    threshold = severGroups.get(str(event.group.id))\r\n                    if int(rate) > threshold:\r\n                        await bot.send(event, \"检测到图片违规\\npredictions-adult:\" + str(rate))\r\n                        try:\r\n                            await bot.recall(event.message_chain.message_id)\r\n                        except:\r\n                            logger.error(\"撤回图片失败\")\r\n                        try:\r\n                            await bot.mute(target=event.sender.group.id, member_id=event.sender.id, time=banTime)\r\n                        except:\r\n                            logger.error(\"禁言失败，权限可能过低\")\r\n                        return\r\n\r\n    @bot.on(GroupMessage)\r\n    async def geturla(event: GroupMessage):\r\n        global severGroups\r\n        if event.message_chain.count(Image) == 1 and \"ping\" in str(event.message_chain):\r\n            lst_img = event.message_chain.get(Image)\r\n            url = lst_img[0].url\r\n            logger.info(\"图片审核:url:\" + url)\r\n\r\n            try:\r\n                rate = await setuModerate(url, moderateK)\r\n            except:\r\n                logger.error(\r\n                    \"涩图审核失败，可能是图片太大，也可能是(小概率)api-key达到本月调用次数限制，尝试注册新账号更新新的api-key以解决\")\r\n                await bot.send(event,\r\n                               \"涩图审核失败，可能是图片太大，也可能是公共api-key达到本月调用次数限制，尝试为本群配置单独的api-key以解决\")\r\n                await bot.send(event,\r\n                               \"1、请在https://www.moderatecontent.com/注册并获取apiKey(不要用QQ邮箱)\\n2、随后群内发送\\n设置审核密钥[apiKey]\\n以开启本群审核功能\\n3、例如\\n设置审核密钥207b10178c64089dvzv90ebfcd7f865d97a\")\r\n\r\n                return\r\n            logger.info(\"图片审核:结果:\" + str(rate))\r\n            await bot.send(event, \"图片检测结果：\\npredictions-adult:\" + str(rate))\r\n\r\n    @bot.on(GroupMessage)\r\n    async def addKeys(event: GroupMessage):\r\n        global severGroups\r\n        global ModerateApiKeys\r\n        if \"设置审核密钥\" in str(event.message_chain):\r\n            a = str(event.message_chain).split(\"设置审核密钥\")[1]\r\n            if event.sender.id == int(master):\r\n                a = moderateK\r\n\r\n            logger.info(\"测试密钥:\" + a)\r\n\r\n            try:\r\n                url = 'https://www.moderatecontent.com/img/sample_anime_2.jpg'\r\n                logger.info(\"图片审核:url:\" + url + \" key:\" + moderateK)\r\n                rate = await setuModerate(url, a)\r\n            except:\r\n                logger.error(\"无效的apiKey或图片太大\")\r\n                await bot.send(event,\r\n                               \"涩图审核失败，可能是图片太大，也可能是api-key无效\\n尝试注册新账号https://www.moderatecontent.com/获取新的api-key以解决\\n指令：设置审核密钥[apiKey]\\n示例如下：\\n设置审核密钥2f4tga2tarafa4hjohljghvbngnf58\")\r\n                return\r\n            logger.info(\"图片审核:结果:\" + str(rate))\r\n            ModerateApiKeys[str(event.group.id)] = a\r\n            with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                result = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            result[\"moderate\"][\"apiKeys\"] = ModerateApiKeys\r\n            with open('config/autoSettings.yaml', 'w', encoding=\"utf-8\") as file:\r\n                yaml.dump(result, file, allow_unicode=True)\r\n            await bot.send(event, \"设置apiKey成功\")\r\n\r\n    @bot.on(GroupMessage)\r\n    async def setConfiga(event: GroupMessage):\r\n        global threshold\r\n        global severGroups\r\n        if 1 == 1:\r\n            if str(event.message_chain).startswith(\"/阈值\") and (\r\n                    str(event.sender.permission) != \"Permission.Member\" or event.sender.id == master):\r\n                if str(event.group.id) in ModerateApiKeys:\r\n                    temp = int(str(event.message_chain)[3:])\r\n                    if temp > 100 or temp < 0:\r\n                        await bot.send(event, \"设置阈值不合法\")\r\n                    else:\r\n                        try:\r\n                            threshold = temp\r\n                            severGroups[str(event.group.id)] = temp\r\n                            with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                                result = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n                            moderate = result.get(\"moderate\")\r\n                            moderate[\"groups\"] = severGroups\r\n                            result[\"moderate\"] = moderate\r\n                            with open('config/autoSettings.yaml', 'w', encoding=\"utf-8\") as file:\r\n                                yaml.dump(result, file, allow_unicode=True)\r\n\r\n                            await bot.send(event, \"成功修改撤回阈值为\" + str(temp))\r\n                        except:\r\n                            await bot.send(event, \"阈值设置出错，请进入config.json中手动设置threshold值\")\r\n                else:\r\n                    logger.warning(str(event.group.id) + \" 开启色图审核失败，未配置apiKey\")\r\n                    await bot.send(event, \"公共apiKey达到每月调用次数限制，本群未配置apiKey,无法开启此功能\")\r\n                    await bot.send(event,\r\n                                   \"1、请在https://www.moderatecontent.com/注册并获取apiKey(不要用QQ邮箱)\\n2、随后群内发送\\n设置审核密钥[apiKey]\\n以开启本群审核功能\\n3、例如\\n设置审核密钥207b10178c64089dvzv90ebfcd7f865d97a\")\r\n\r\n        if (str(event.sender.permission) != \"Permission.Member\" or event.sender.id == master) and str(\r\n                event.message_chain) == \"/moderate\":\r\n            if str(event.group.id) in ModerateApiKeys:\r\n                if str(event.group.id) in severGroups:\r\n                    logger.info(\"群:\" + str(event.group.id) + \" 关闭了审核\")\r\n                    severGroups.pop(str(event.group.id))\r\n                    await bot.send(event, \"关闭审核\")\r\n                else:\r\n                    logger.info(\"群:\" + str(event.group.id) + \" 开启了审核\")\r\n                    severGroups[str(event.group.id)] = 40\r\n                    await bot.send(event, \"开启审核\")\r\n                with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                    result = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n                moderate = result.get(\"moderate\")\r\n                moderate[\"groups\"] = severGroups\r\n                result[\"moderate\"] = moderate\r\n                with open('config/autoSettings.yaml', 'w', encoding=\"utf-8\") as file:\r\n                    yaml.dump(result, file, allow_unicode=True)\r\n                await bot.send(event, \"ok\")\r\n            else:\r\n                logger.warning(str(event.group.id) + \" 开启色图审核失败，未配置apiKey\")\r\n                await bot.send(event, \"公共apiKey达到每月调用次数限制\")\r\n                await bot.send(event, \"开启色图审核失败，未配置本群apiKey\")\r\n                await bot.send(event,\r\n                               \"1、请在https://www.moderatecontent.com/注册并获取apiKey(不要用QQ邮箱)\\n2、随后群内发送\\n设置审核密钥[apiKey]\\n以开启本群审核功能\\n3、例如\\n设置审核密钥207b10178c64089dvzv90ebfcd7f865d97a\")\r\n\r\n    @bot.on(GroupMessage)\r\n    async def exitBadGroup(event: GroupMessage):\r\n        ls = [\"你妈\", \"傻逼\", \"死你\", \"垃圾\", \"nm\", \"狗东西\", \"废物\", \"低能\", \"沙比\", \"啥比\", \"沙壁\", \"啥必\", \"辣鸡\",\r\n              \"腊鸡\", \"妈\", \"爸\", \"爹\", \"智障\", \"死\", \"逼\"]\r\n        if At(bot.qq) in event.message_chain:\r\n            for i in ls:\r\n                if i in str(event.message_chain):\r\n                    logger.warn(\"敏感词触发者：\" + str(event.sender.id))\r\n                    await bot.send_friend_message(master,\r\n                                                  \"用户：\" + str(event.sender.id) + \" 发送了含敏感字消息\\n群号：\" + str(\r\n                                                      event.group.id) + \"\\n内容：\" + str(\r\n                                                      event.message_chain) + \"\\n可使用 退群#群号 操作bot退出该群\\n/bl add qq号\\n拉黑指定用户\\n/bot off 群号\\n停止在该群的服务\")\r\n\r\n    @bot.on(GroupMessage)\r\n    async def AddRemoveBl(event: GroupMessage):\r\n        global superUser, superBlGroups\r\n        if event.group.id in superBlGroups:\r\n            await bot.send(event, \"本群在黑名单内\")\r\n            await bot.quit(event.group.id)\r\n            logger.warning(f\"已清退永久黑名单群{event.group.id}\")\r\n        if event.sender.id == master:\r\n            if str(event.message_chain).startswith(\"/sbg \"):\r\n                if str(event.message_chain).startswith(\"/sbg add \"):\r\n                    groupId = int(str(event.message_chain).split(\" \")[-1])\r\n                    if groupId in superBlGroups:\r\n                        await bot.send(event, f\"已存在永久黑名单群{groupId}\")\r\n                        return\r\n                    superBlGroups.append(groupId)\r\n                    await bot.send(event, f\"成功添加永久黑名单群{groupId}\")\r\n                if str(event.message_chain).startswith(\"/sbg remove \"):\r\n                    groupId = int(str(event.message_chain).split(\" \")[-1])\r\n                    if groupId not in superBlGroups:\r\n                        await bot.send(event, f\"不存在永久黑名单群{groupId}\")\r\n                        return\r\n                    superBlGroups.remove(groupId)\r\n                    await bot.send(event, f\"成功移除永久黑名单群{groupId}\")\r\n                with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                    result = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n                result[\"superBlGroups\"] = superBlGroups\r\n                with open('config/autoSettings.yaml', 'w', encoding=\"utf-8\") as file:\r\n                    yaml.dump(result, file, allow_unicode=True)\r\n\r\n    @bot.on(GroupMessage)\r\n    async def quitgrrrr(event: GroupMessage):\r\n        if event.sender.id == master and (\r\n                str(event.message_chain).startswith(\"/quit<\") or str(event.message_chain).startswith(\"/quit＜\")):\r\n            try:\r\n                setg = int(str(event.message_chain).replace(\"/quit<\", \"\").replace(\"/quit＜\", \"\"))\r\n            except:\r\n                await bot.send(event, \"不合法的取值\")\r\n                return\r\n            await bot.send(event, \"退出所有人数小于\" + str(setg) + \"的群....\")\r\n            asf = await bot.group_list()\r\n            #print(len(asf.data), asf.data)\r\n            with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                result23 = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            youquan1 = result23.get(\"trustGroups\")\r\n            totalquit = 0\r\n            for nb in asf:\r\n                gid = nb.id\r\n                try:\r\n                    sf = await bot.member_list(int(gid))\r\n                    sf = len(sf.data)\r\n                except Exception as e:\r\n                    logger.error(e)\r\n                    continue\r\n                try:\r\n                    if sf < setg and gid not in youquan1 and sf!=0:\r\n                        await bot.send_group_message(gid, \"无授权群，自动退出。\")\r\n                        logger.warning(\"已清退\" + str(gid))\r\n                        await bot.quit(gid)\r\n                        totalquit += 1\r\n                except Exception as e:\r\n                    logger.error(e)\r\n                    continue\r\n                    totalquit += 1\r\n            await bot.send(event, \"已退出\" + str(totalquit) + \"个群\")\r\n\r\n    @bot.on(GroupMessage)\r\n    async def quitgrrrrr(event: GroupMessage):\r\n        if fuckinggroup:\r\n            gid = event.group.id\r\n            if gid==int(mainGroup):\r\n                return\r\n            with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                result23 = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            youquan1 = result23.get(\"trustGroups\")\r\n            try:\r\n                sf = await bot.member_list(int(gid))\r\n                sf = len(sf.data)\r\n            except Exception as e:\r\n                logger.error(e)\r\n                return\r\n            try:\r\n                if sf < fuckingnumber and gid not in youquan1:\r\n                    await bot.send_group_message(gid, \"无授权群，自动退出。\")\r\n                    logger.warning(\"已清退:\" + str(gid))\r\n                    await bot.quit(gid)\r\n            except Exception as e:\r\n                logger.error(e)\r\n\r\n\r\n    async def seeeeeee(bot, men, opn, text, groupid):\r\n        ta = text.split(\"%\")\r\n        #print(ta)\r\n        while \"\" in ta:\r\n            ta.remove(\"\")\r\n        #print(ta)\r\n        p = 0\r\n        for i in ta:\r\n            if i == \"主动\":\r\n                ta[p] = At(opn)\r\n            elif i == \"被动\":\r\n                ta[p] = At(men)\r\n            else:\r\n                if i == \"\":\r\n                    ta.remove(\"\")\r\n            p += 1\r\n        #print(ta)\r\n        try:\r\n            await bot.send_group_message(groupid, ta)\r\n        except:\r\n            logger.error(\"群事件监听出错，不影响运行，请忽略\")\r\n\r\n    @bot.on(FriendMessage)\r\n    async def getGroupList(event: FriendMessage):\r\n        if event.sender.id == master and (\r\n                str(event.message_chain) == \"群列表\"):\r\n            r = \"群列表如下：\"\r\n            asf = await bot.group_list()\r\n            # print(len(asf.data), asf.data)\r\n            with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                result23 = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            youquan1 = result23.get(\"trustGroups\")\r\n            logger.info(\"获取群列表\")\r\n            total = 0\r\n            for nb in asf:\r\n                gid = nb.id\r\n                try:\r\n                    sf = await bot.member_list(int(gid))\r\n                    gname = sf.data[0].group.name\r\n                    if gid in youquan1:\r\n                        logger.info(f\"信任群聊：群 {gid} ({gname})\\n人数 {len(sf.data)}\")\r\n                        r += \"\\n\" + f\"信任群聊：群 {gid} ({gname})\\n人数 {len(sf.data)}\"\r\n                    else:\r\n                        logger.info(f\"群 {gid} ({gname})\\n人数 {len(sf.data)}\")\r\n                        r += \"\\n\" + f\"群 {gid} ({gname})\\n人数 {len(sf.data)}\"\r\n                    total += 1\r\n                except Exception as e:\r\n                    logger.error(e)\r\n                    continue\r\n            await bot.send(event,\r\n                           f\"当前群列表：{r}\\n总数：{total}\\n\\n可发送如下指令以退出群聊：\\n/quit<7    此指令用于退出所有人数小于7的群聊，数字可更改\\n退群#群号     此指令退出指定群聊\")\r\n\r\n    @bot.on(FriendMessage)\r\n    async def quitgrrrr(event: FriendMessage):\r\n        if event.sender.id == master and (\r\n                str(event.message_chain).startswith(\"/quit<\") or str(event.message_chain).startswith(\"/quit＜\")):\r\n            try:\r\n                setg = int(str(event.message_chain).replace(\"/quit<\", \"\").replace(\"/quit＜\", \"\"))\r\n            except:\r\n                await bot.send(event, \"不合法的取值\")\r\n                return\r\n            await bot.send(event, \"退出所有人数小于\" + str(setg) + \"的群....\")\r\n            asf = await bot.group_list()\r\n            # print(len(asf.data), asf.data)\r\n            with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                result23 = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            youquan1 = result23.get(\"trustGroups\")\r\n            totalquit = 0\r\n            for nb in asf:\r\n                gid = nb.id\r\n                try:\r\n                    sf = await bot.member_list(int(gid))\r\n                    sf = len(sf.data)\r\n                except Exception as e:\r\n                    logger.error(e)\r\n                    continue\r\n                try:\r\n                    if sf < setg and gid not in youquan1:\r\n                        await bot.send_group_message(gid, \"无授权小群，自动退出。\")\r\n                        logger.warning(\"已清退\" + str(gid))\r\n                        await bot.send(event, f\"清退：{gid}\")\r\n                        await bot.quit(gid)\r\n                except Exception as e:\r\n                    logger.error(e)\r\n                    continue\r\n                    totalquit += 1\r\n            await bot.send(event, \"已退出\" + str(totalquit) + \"个群\")\r\n    #mainGroup内自行授权\r\n    @bot.on(GroupMessage)\r\n    async def accessGiver(event: GroupMessage):\r\n        global userdict\r\n        if str(event.message_chain).startswith(\"授权#\") and (event.group.id == mainGroup or event.sender.id == master):\r\n            try:\r\n                if event.sender.id == master:\r\n                    setN = str(masterPermissionDays)\r\n                    fsf = 0\r\n                else:\r\n                    if str(event.sender.id) != str(event.message_chain).split(\"#\")[1]:\r\n                        await bot.send(event, \"不匹配的账号，请发送 授权#你自己的QQ\")\r\n                        return\r\n                    setN = str(userSelfPermissonDays)\r\n                    fsf = 1\r\n\r\n            except:\r\n                return\r\n\r\n            userId = str(event.message_chain).split(\"#\")[1]\r\n            if userId in userdict:\r\n                data = userdict.get(userId)\r\n                if \"selfAdded\" in data and fsf == 1:\r\n                    await bot.send(event, \"拒绝授权，您已为自己授权过\", True)\r\n                    return\r\n                data[\"sts\"] = str(int(data.get(\"sts\")) + int(setN))\r\n                if fsf == 1:\r\n                    data[\"selfAdded\"] = \"True\"\r\n                userdict[userId] = data\r\n            else:\r\n                time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')\r\n                userdict[userId] = {\"city\": \"通辽\", \"st\": time, \"sts\": setN, \"exp\": \"0\",\r\n                                    \"id\": \"miav-\" + random_str(), 'ok': time}\r\n            logger.info(\"更新用户数据中\")\r\n            with open('data/userData.yaml', 'w', encoding=\"utf-8\") as file:\r\n                yaml.dump(userdict, file, allow_unicode=True)\r\n            logger.info(\"授权\" + userId + \"完成\")\r\n            await bot.send(event, \"授权完成\")\r\n\r\n            if event.sender.id == master:\r\n                await bot.send_friend_message(int(userId), \"授权完成,开放功能权限。\")\r\n            else:\r\n                await bot.send_friend_message(int(userId), \"授权完成\")\r\n\r\n    @bot.on(NewFriendRequestEvent)\r\n    async def allowStranger(event: NewFriendRequestEvent):\r\n        global userdict\r\n        logger.info(\"新的好友申请，来自\" + str(event.from_id))\r\n        if (str(event.from_id) in userdict.keys() and int(\r\n                userdict.get(str(event.from_id)).get(\"sts\")) > allowFriendstimes) or autoallowFriend:\r\n            logger.info(\"有用户记录，同意\")\r\n            al = '同意'\r\n            await bot.allow(event)\r\n            await sleep(5)\r\n            await bot.send_friend_message(event.from_id,\"你好ヾ(≧▽≦*)o，bot项目地址：https://github.com/avilliai/Manyana\\n觉得还不错的话可以点个star哦\")\r\n            await bot.send_friend_message(event.from_id, f\"群内发送 @{botName} 帮助 获取功能列表\")\r\n            await bot.send_friend_message(event.from_id, f\"本bot用户群{mainGroup}\")\r\n        else:\r\n            logger.info(\"无用户记录，拒绝\")\r\n            al = '拒绝'\r\n        await bot.send_friend_message(master, '有新的好友申请\\n来自：' + str(event.from_id) + '\\n来自群：' + str(\r\n            event.group_id) + '\\n昵称：' + event.nick + '\\n状态：' + al)\r\n\r\n    @bot.on(GroupMessage)\r\n    async def usersignandAdd(event: GroupMessage):\r\n        global haveSign, tod,userdict\r\n        if '签到' == str(event.message_chain):\r\n            logger.info(\"接收来自：\" + event.sender.member_name + \"(\" + str(event.sender.id) + \") 的签到指令\")\r\n            if str(event.sender.id) in userdict.keys():\r\n                data = userdict.get(str(event.sender.id))\r\n                signOrNot = data.get('ok')\r\n                time114514 = str(datetime.datetime.now().strftime('%Y-%m-%d'))\r\n                if signOrNot != time114514 or event.sender.id == master:\r\n                    city = data.get('city')\r\n                    startTime = data.get('st')\r\n                    times = str(int(data.get('sts')) + 1)\r\n                    if times == trustDays:\r\n                        await bot.send(event, '已对您开启邀请bot加群与私聊chatglm权限', True)\r\n                    exp = str(int(data.get('exp')) + random.randint(1, 20))\r\n                    nowTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')\r\n                    id = data.get('id')\r\n                    weather = await querys(city, api_KEY)\r\n                    logger.info(weather)\r\n                    imgurl = get_user_image_url(event.sender.id)\r\n                    logger.info(\"制作签到图片....\")\r\n                    await bot.send(event,\r\n                                   f\"{event.sender.member_name}是今天第{len(haveSign)}个签到的，正在制作签到图片.....\")\r\n                    asyncio.run_coroutine_threadsafe(fuff(imgurl, id, weather, nowTime, times, exp, startTime, event),\r\n                                                     newLoop)\r\n\r\n                    logger.info(\"完成，发送签到图片\")\r\n                    data['sts'] = times\r\n                    data['exp'] = exp\r\n                    data['ok'] = time114514\r\n                    userdict[str(event.sender.id)] = data\r\n                    logger.info(\"启动天气查询\")\r\n                    logger.info(\"更新用户数据中\")\r\n                    with open('data/userData.yaml', 'w', encoding=\"utf-8\") as file:\r\n                        yaml.dump(userdict, file, allow_unicode=True)\r\n                    haveSign.append(event.sender.id)\r\n                    paddd = {str(tod): haveSign}\r\n                    with open('data/signs.yaml', 'w', encoding=\"utf-8\") as file:\r\n                        yaml.dump(paddd, file, allow_unicode=True)\r\n                else:\r\n                    logger.info(\"签到过了，拒绝签到\")\r\n                    await bot.send(event, '不要重复签到！笨蛋！', True)\r\n            else:\r\n                logger.info(\"未注册用户\" + str(event.sender.id) + \"，提醒注册\")\r\n                await bot.send(event, '请完善用户信息\\n发送 注册#城市名 以完善信息\\n例如 注册#通辽', True)\r\n                global newUser\r\n                newUser[str(event.sender.id)] = 0\r\n\r\n    @bot.on(GroupMessage)\r\n    async def handle_group_message(event: GroupMessage):\r\n        global newUser, haveSign, tod,userdict\r\n        if str(event.sender.id) in newUser.keys():\r\n            newUser.pop(str(event.sender.id))\r\n            logger.info(\"用户+1：\" + str(event.sender.member_name) + \" (\" + str(event.sender.id) + \")\")\r\n            time114514 = str(datetime.datetime.now().strftime('%Y-%m-%d'))\r\n            time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')\r\n            try:\r\n                city = str(event.message_chain).split('#')[1]\r\n                weather = await querys(city, api_KEY)\r\n                logger.info(\"验证城市通过\")\r\n            except:\r\n                await bot.send(event, 'error，默认执行 注册#通辽 ,随后可发送 修改城市#城市名 进行地区修改')\r\n                city = '通辽'\r\n                weather = await querys(city, api_KEY)\r\n                logger.info(\"城市验证未通过，送进通辽当可汗子民\")\r\n            global userdict\r\n            userdict[str(event.sender.id)] = {\"city\": city, \"st\": time, \"sts\": \"1\", \"exp\": \"0\",\r\n                                              \"id\": \"miav-\" + random_str(6,\r\n                                                                         'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789'),\r\n                                              'ok': time114514}\r\n            data = userdict.get(str(event.sender.id))\r\n            city = data.get('city')\r\n            startTime = data.get('st')\r\n            times = str(int(data.get('sts')) + 1)\r\n            exp = str(int(data.get('exp')) + random.randint(1, 20))\r\n            nowTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')\r\n            id = data.get('id')\r\n            data['sts'] = times\r\n            data['exp'] = exp\r\n            data['userName'] = event.sender.member_name\r\n            imgurl = get_user_image_url(event.sender.id)\r\n            logger.info(\"制作签到图片....\")\r\n            await bot.send(event, f\"{event.sender.member_name}是今天第{len(haveSign)}个签到的，正在制作签到图片.....\")\r\n            asyncio.run_coroutine_threadsafe(fuff(imgurl, id, weather, nowTime, times, exp, startTime, event), newLoop)\r\n\r\n            userdict[str(event.sender.id)] = data\r\n            logger.info(\"更新用户数据中\")\r\n            with open('data/userData.yaml', 'w', encoding=\"utf-8\") as file:\r\n                yaml.dump(userdict, file, allow_unicode=True)\r\n            haveSign.append(event.sender.id)\r\n            paddd = {str(tod): haveSign}\r\n            with open('data/signs.yaml', 'w', encoding=\"utf-8\") as file:\r\n                yaml.dump(paddd, file, allow_unicode=True)\r\n\r\n    async def fuff(imgurl, id, weather, nowTime, times, exp, startTime, event):\r\n        path = await signPicMaker(imgurl, id, weather, nowTime, times, exp, startTime)\r\n        logger.info(\"完成，发送签到图片\")\r\n        await bot.send(event, Image(path=path), True)\r\n    #自动更新到下一天\r\n    @bot.on(Startup)\r\n    async def upddddd(event: Startup):\r\n        while True:\r\n            await sleep(60)\r\n            with open('data/signs.yaml', 'r', encoding='utf-8') as f:\r\n                signstoday = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            global haveSign, tod\r\n            tod = str(datetime.date.today())\r\n            if tod in signstoday:\r\n                haveSign = signstoday.get(tod)\r\n            else:\r\n                haveSign = [123]\r\n                paddd = {str(tod): haveSign}\r\n                with open('data/signs.yaml', 'w', encoding=\"utf-8\") as file:\r\n                    yaml.dump(paddd, file, allow_unicode=True)\r\n\r\n    @bot.on(GroupMessage)\r\n    async def changeCity(event: GroupMessage):\r\n        if str(event.message_chain).startswith('修改城市#'):\r\n            logger.info(\"接收城市修改请求\")\r\n            global userdict\r\n            city = str(event.message_chain)[5:]\r\n            try:\r\n\r\n                data = userdict.get(str(event.sender.id))\r\n                await bot.send(event, '正在验证城市......，')\r\n                weather = await querys(city, api_KEY)\r\n                data['city'] = city\r\n                data[\"id\"] = \"miav-\" + random_str(6, 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789')\r\n                await bot.send(event, '成功')\r\n                userdict[str(event.sender.id)] = data\r\n                with open('data/userData.yaml', 'w', encoding=\"utf-8\") as file:\r\n                    yaml.dump(userdict, file, allow_unicode=True)\r\n            except:\r\n                await bot.send(event, '没有对应的城市数据......，', True)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run/groupManager.py b/run/groupManager.py
+--- a/run/groupManager.py	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/run/groupManager.py	(date 1733317049000)
+@@ -19,6 +19,7 @@
+ from plugins.setuModerate import setuModerate
+ from plugins.weatherQuery import querys
+ from run.aiReply import CListen
++from run.authentication import authentication, delete_key
+ 
+ 
+ def main(bot, config, moderateKey, logger):
+@@ -819,24 +820,22 @@
+         global userdict
+         if str(event.message_chain).startswith("授权#") and (event.group.id == mainGroup or event.sender.id == master):
+             try:
+-                if event.sender.id == master:
++                if event.sender.id == master or authentication(event.sender.id):
+                     setN = str(masterPermissionDays)
+                     fsf = 0
+-                else:
+-                    if str(event.sender.id) != str(event.message_chain).split("#")[1]:
+-                        await bot.send(event, "不匹配的账号，请发送 授权#你自己的QQ")
+-                        return
+-                    setN = str(userSelfPermissonDays)
+-                    fsf = 1
++                    if authentication(str(event.sender.id)):
++                        fsf = 1
++                else:
++                    await bot.send(event, "抱歉，你没有权限授权哦")
+ 
+             except:
+                 return
+ 
+             userId = str(event.message_chain).split("#")[1]
+-            if userId in userdict:
++            if authentication(userId):
+                 data = userdict.get(userId)
+-                if "selfAdded" in data and fsf == 1:
+-                    await bot.send(event, "拒绝授权，您已为自己授权过", True)
++                if fsf == 1:
++                    await bot.send(event, "你已经有权限啦，不用再次授权咯！！！", True)
+                     return
+                 data["sts"] = str(int(data.get("sts")) + int(setN))
+                 if fsf == 1:
+@@ -857,6 +856,30 @@
+             else:
+                 await bot.send_friend_message(int(userId), "授权完成")
+ 
++    @bot.on(GroupMessage)
++    async def accessCancel(event: GroupMessage):
++        global userdict
++        flag = False
++        if str(event.message_chain).startswith("取消授权#") and (event.group.id == mainGroup or event.sender.id == master):
++            try:
++                if event.sender.id == master or authentication(event.sender.id):
++                    flag = True
++                else:
++                    await bot.send(event, "抱歉，你没有权限授权哦")
++
++            except:
++                return
++
++            userId = str(event.message_chain).split("#")[1]
++            if flag:
++                res = delete_key(userId)
++                if res:
++                    await bot.send(event, "取消授权完成")
++                else:
++                    await bot.send(event, "该用户本来就没有权限！！！")
++            else:
++                return
++
+     @bot.on(NewFriendRequestEvent)
+     async def allowStranger(event: NewFriendRequestEvent):
+         global userdict
+Index: config/api.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># 配置文件，在这里填写api\r\n\r\nweatherXinZhi: Sxxxxxxx          #心知天气api   从https://www.seniverse.com/注册获取\r\nsauceno-api: bxxxxxx             #sauceno搜图api，你可以从https://saucenao.com/user.php注册并获取\r\nmoderate: 1xxxxxx                #色图审核api，不能用了，等以后更新\r\nnasa_api: HSxxxxxxx              #nasa相关天文api 从https://api.nasa.gov/index.html#main-content申请\r\n\r\nchatGLM: 69xxxxxxx               #chatGLM的apiKey，从https://open.bigmodel.cn/获取\r\ngemini:                          #谷歌的gemini api，支持多key，在https://ai.google.dev/tutorials/setup?hl=zh-cn获取，需要配置proxy或GeminiRevProxy，否则无法使用\r\n  - AIxxxxxxxxxx\r\ngeminimodel: \"gemini-1.5-flash\"  #gemini默认的模型，不知道是啥就别动。可切换为gemini-1.5-pro，每日可请求次数会少一些但效果会更好。\r\nopenaiSettings:                  #openai官方的apikey\r\n  openai-keys:\r\n    - sk-Mxxxxxxxxxxx\r\n  openai-model: \"gpt-3.5-turbo\"  #调用openai api对应的模型，前提：在settings.yaml默认模型已经设置为gpt3.5，并配置了apikey\r\n  openai-transit: \"\"             #你自己的chatGPT中转站，你最好知道这是什么，否则就不要动。\r\nsparkAI:                         #讯飞星火\r\n  apiKey: \"\"                     #在https://console.xfyun.cn/services/cbm申请，并复制对应key和secret，注意，免费的是lite版\r\n  apiSecret: \"\"\r\n  spark-model: \"general\"         #讯飞星火的模型设置，general是免费无限制的，一般不建议修改\r\nwenxinAI:                        #文心大模型\r\n  apiKey: \"\"                     #https://cloud.baidu.com/doc/WENXINWORKSHOP/s/Slkkydake#%E8%AF%A6%E6%83%85\r\n  secretKey: \"\"\r\n  wenxin-model: \"ernie-speed-128k\"         #文心的模型设置，需要在https://console.bce.baidu.com/qianfan/ais/console/onlineService开通对应的模型。ernie_speed、ernie-speed-128k、ERNIE-Speed-AppBuilder、ernie-lite-8k、eb-instant\r\n腾讯元器: #接入QQ智能体\r\n  智能体ID: \"\"\r\n  token: \"\"\r\nbing-image-creator:              #bing的ai绘画，参考https://github.com/avilliai/Manyana/issues/8\r\n  _U: \"\"\r\n  KievRPSSecAuth: \"\"\r\n\r\nproxy: ''                        #代理 http://127.0.0.1:端口 如http://127.0.0.1:10809 自己设置对应的端口，没有就不填，v2ray一般是10809，clash一般7890，ssr一般1080\r\nsock5-proxy: \"\"                  #sock5代理，如使用bing-imagecreator必须配置，取决于你自己代理的端口。\r\nGeminiRevProxy: \"\"               #基于netlify反向代理，搭建后本地环境无需开启代理即可访问Gemini，参考https://github.com/avilliai/Manyana/issues/17\r\n\r\nGptSovitsToken: \"\"     #GptSovits的token,带有情感向量的语音合成，从https://getkey.acgnai.top/获取\r\nFishTTSAuthorization: \"\"         #FishTTS语音合成必要参数，看https://github.com/avilliai/Manyana/issues/19\r\nsdUrl: \"\"                        #你自己搭建的sd，地址，示例http://127.0.0.1:17858（示例≠你能直接填示例用），部署https://www.bilibili.com/video/BV1iM4y1y7oA/\r\nsd审核和反推api: \"http://server.20020026.xyz:7865\"            \r\n\r\n蓝奏云:                           #文件转直链必要配置\r\n  ylogin: \"\"                     #参考https://github.com/avilliai/Manyana/issues/36获取\r\n  phpdisk_info: \"\"\r\n#下面的不建议你去折腾哈\r\nmodelscopeCookie: ''            #modescopeTTS增加反爬虫，默认留空用我的，如不能用了自行抓取cookie，查看https://github.com/avilliai/Manyana/issues/7\r\nbert_colab: https://mess-addressed-openings-exposed.trycloudflare.com/synthesize        #新版本Manyana无需配置此功能，语音合成选modelscopeTTS模式可直接使用。但如果你喜欢折腾：bert_vits_colab部署：https://colab.research.google.com/drive/1n8lI6pOiDtli2zC5fL9PZ9TZqbOafqma?usp=sharing 请注意，使用此功能必须配置上面的proxy项\r\ncozi: \"\"                        #已不推荐，https://github.com/avilliai/Manyana/issues/4\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/config/api.yaml b/config/api.yaml
+--- a/config/api.yaml	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/config/api.yaml	(date 1733175589000)
+@@ -11,9 +11,9 @@
+ geminimodel: "gemini-1.5-flash"  #gemini默认的模型，不知道是啥就别动。可切换为gemini-1.5-pro，每日可请求次数会少一些但效果会更好。
+ openaiSettings:                  #openai官方的apikey
+   openai-keys:
+-    - sk-Mxxxxxxxxxxx
+-  openai-model: "gpt-3.5-turbo"  #调用openai api对应的模型，前提：在settings.yaml默认模型已经设置为gpt3.5，并配置了apikey
+-  openai-transit: ""             #你自己的chatGPT中转站，你最好知道这是什么，否则就不要动。
++  - sk-kqDuLErwH5oEclbgHt6KWivDL86YRm6CCWn6HjK7dufYiG7y
++  openai-model: gpt-4o-mini      #调用openai api对应的模型，前提：在settings.yaml默认模型已经设置为gpt3.5，并配置了apikey
++  openai-transit: https://api.chatanywhere.tech
+ sparkAI:                         #讯飞星火
+   apiKey: ""                     #在https://console.xfyun.cn/services/cbm申请，并复制对应key和secret，注意，免费的是lite版
+   apiSecret: ""
+Index: data/ASMR.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>已推送ASMR:\r\n  - vqZTtpN6pd8\r\n  
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/data/ASMR.yaml b/data/ASMR.yaml
+--- a/data/ASMR.yaml	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/data/ASMR.yaml	(date 1735425302000)
+@@ -1,3 +1,29 @@
+ 已推送ASMR:
+-  - vqZTtpN6pd8
+-  
+\ No newline at end of file
++- vqZTtpN6pd8
++- qSmBdbdXyTU
++- mb280xO866k
++- taXAvm_p6Ss
++- poiwQPpFYL8
++- n5P3qc3RsEM
++- 3Z6u9ajzfio
++- C3vp6b_s7NI
++- 0l_oGDAWoZ8
++- H7KRguYC-yU
++- PUBBs_asgcY
++- j6kSeIUTmtA
++- vjSqmjXwr1Y
++- JeAHnHicGow
++- HAl-10e-o44
++- DM_UROc2U6I
++- YX4nugj7_00
++- lnvrROdNwfE
++- REgS9euyg2c
++- FTV1zKa9QSs
++- Q69moVyWFRk
++- v7gU-JMldKM
++- c-H9U8ACABg
++- ImIeWUQqJGg
++- uqYyoyLHso4
++- FpfdrBqLEQM
++- wRHjevHCoxM
++- 0LyFijhW428
+Index: .idea/Manyana.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"PYTHON_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\">\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <excludeFolder url=\"file://$MODULE_DIR$/venv\" />\r\n      <excludeFolder url=\"file://$MODULE_DIR$/venv\" />\r\n    </content>\r\n    <orderEntry type=\"jdk\" jdkName=\"Python 3.9 (Manyana) (4)\" jdkType=\"Python SDK\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n  <component name=\"PackageRequirementsSettings\">\r\n    <option name=\"versionSpecifier\" value=\"不指定版本\" />\r\n  </component>\r\n  <component name=\"PyNamespacePackagesService\">\r\n    <option name=\"namespacePackageFolders\">\r\n      <list>\r\n        <option value=\"$MODULE_DIR$/config\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Manyana.iml b/.idea/Manyana.iml
+--- a/.idea/Manyana.iml	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/.idea/Manyana.iml	(date 1735512200080)
+@@ -5,11 +5,11 @@
+       <excludeFolder url="file://$MODULE_DIR$/venv" />
+       <excludeFolder url="file://$MODULE_DIR$/venv" />
+     </content>
+-    <orderEntry type="jdk" jdkName="Python 3.9 (Manyana) (4)" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.9 (Manyana-main) (2)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+   <component name="PackageRequirementsSettings">
+-    <option name="versionSpecifier" value="不指定版本" />
++    <option name="versionSpecifier" />
+   </component>
+   <component name="PyNamespacePackagesService">
+     <option name="namespacePackageFolders">
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"Black\">\r\n    <option name=\"sdkName\" value=\"Python 3.9 (Manyana) (2)\" />\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.9 (venv)\" project-jdk-type=\"Python SDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/.idea/misc.xml	(date 1735512200086)
+@@ -3,5 +3,5 @@
+   <component name="Black">
+     <option name="sdkName" value="Python 3.9 (Manyana) (2)" />
+   </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (venv)" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (Manyana-main) (2)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+Index: data/signs.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>'2024-12-02':\r\n- 123\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/data/signs.yaml b/data/signs.yaml
+--- a/data/signs.yaml	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/data/signs.yaml	(date 1735430418000)
+@@ -1,2 +1,2 @@
+-'2024-12-02':
++'2024-12-29':
+ - 123
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># -*- coding:utf-8 -*-\r\nfrom itertools import repeat\r\nfrom time import sleep\r\n\r\nimport asyncio\r\nimport datetime\r\nimport websockets\r\nfrom websockets.exceptions import ConnectionClosedOK, ConnectionClosed\r\nfrom websockets import connect\r\n\r\nimport os\r\nimport random\r\nimport shutil\r\nimport sys\r\nimport json\r\n\r\nfrom asyncio import sleep as sleep1, exceptions\r\n\r\n# 下面的两行是launcher启动必要设置，勿动。\r\nos.chdir(os.path.dirname(os.path.abspath(__file__)))\r\nsys.path.append(os.path.dirname(os.path.abspath(__file__)))\r\nfrom mirai.models import ForwardMessageNode, Forward\r\nimport yaml\r\nfrom mirai import Mirai, WebSocketAdapter, GroupMessage, Image, At, Startup, FriendMessage, Shutdown, MessageChain\r\n\r\nfrom plugins.toolkits import newLogger, random_str, get_system_info\r\nfrom run import aiReply, voiceReply, nudgeReply, wikiHelper, imgSearch, extraParts, wReply, groupManager, \\\r\n    musicShare, LiveMonitor, aronaapi, groupGames, musicpick, scheduledTasks, appCard, aiDraw, starRail, bangumi, \\\r\n    draftBottle, galgame, character_identify, wifeyouwant\r\n\r\n\r\n# 为了实现黑名单和群开关功能，继承webSocketAdapter类\r\nclass MyWebSocketAdapter(WebSocketAdapter):\r\n    def __init__(self, verify_key, host, port, result, qq):\r\n        super().__init__(verify_key=verify_key, host=host, port=port)\r\n        self.result = result\r\n        self.qq = qq  # 添加 QQ 号\r\n\r\n    async def _connect(self):\r\n        \"\"\"重写 _connect 方法，添加重连逻辑并传递额外的头信息\"\"\"\r\n        headers = {\r\n            'verifyKey': self.verify_key or '',\r\n            'qq': str(self.qq),\r\n        }\r\n        while True:\r\n            try:\r\n                self.connection = await connect(self.host_name, extra_headers=headers)\r\n                logger.info(f\"WebSocket 连接成功：{self.host_name}\")\r\n                break\r\n            except Exception as e:\r\n                logger.error(f\"WebSocket 连接失败，5 秒后重试：{e}\")\r\n                await asyncio.sleep(5)\r\n\r\n    async def _receiver(self):\r\n        \"\"\"重写 _receiver 方法，处理连接关闭异常，尝试自动重连。\"\"\"\r\n        await self._connect()\r\n        while True:\r\n            try:\r\n                response = await self.connection.recv()\r\n                data = json.loads(response)\r\n                sync_id = data.get('syncId', '-1')\r\n                self._recv_dict[sync_id].append(data['data'])\r\n            except KeyError:\r\n                logger.error(f'[WebSocket] 收到不正确的数据：{response}')\r\n            except asyncio.CancelledError:\r\n                logger.info('接收器任务已取消。')\r\n                break\r\n            except (websockets.exceptions.ConnectionClosed, ConnectionResetError) as e:\r\n                logger.error(f\"WebSocket 连接关闭，原因：{e}\")\r\n                # 尝试重新连接\r\n                await self._connect()\r\n            except Exception as e:\r\n                logger.error(f\"接收消息时发生异常：{e}\")\r\n                await asyncio.sleep(5)\r\n\r\n    async def _recv(self, sync_id: str = '-1', timeout: int = 600) -> dict:\r\n        \"\"\"接收并解析 websocket 数据。\"\"\"\r\n        timer = range(timeout) if timeout > 0 else repeat(0)\r\n        for _ in timer:\r\n            if self._recv_dict[sync_id]:\r\n                data = self._recv_dict[sync_id].popleft()\r\n                # print(data)\r\n                if data.get('code', 0) != 0:\r\n                    pass\r\n                    # raise exceptions.ApiError(data)\r\n                try:\r\n                    if \"messageChain\" in data:\r\n                        if data[\"sender\"][\"id\"] in self.result[\"banuser\"] or data[\"sender\"][\"group\"][\"id\"] in \\\r\n                                self.result[\"botoff\"]:\r\n                            pass\r\n                        else:\r\n                            return data\r\n                    else:\r\n                        return data\r\n                except:\r\n                    return data\r\n                # 如果没有对应同步 ID 的数据，则等待 websocket 数据\r\n                # 目前存在问题：如果 mah 发回的数据不含 sync_id，\r\n                # 这里就会无限循环……\r\n                # 所以还是限制次数好了。\r\n            await asyncio.sleep(0.1)\r\n        raise TimeoutError(\r\n            f'[WebSocket] mirai-api-http 响应超时，可能是由于调用出错。同步 ID：{sync_id}。'\r\n        )\r\n\r\n\r\nif __name__ == '__main__':\r\n    import sys  # 确保导入 sys 模块\r\n\r\n    counter = 0  # 初始化计数器\r\n    while counter <= 20:\r\n        try:\r\n            if not os.path.exists(\"data/pictures/benzi\"):\r\n                os.mkdir(\"data/pictures/benzi\")\r\n            with open('config.json', 'r', encoding='utf-8') as f:\r\n                data = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n\r\n            config = data\r\n            qq = int(config.get('botQQ'))\r\n            key = str(config.get(\"vertify_key\"))\r\n            port = int(config.get(\"port\"))\r\n            global autoSettings\r\n            with open('config/autoSettings.yaml', 'r', encoding='utf-8') as f:\r\n                autoSettings = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            bot = Mirai(qq, adapter=MyWebSocketAdapter(\r\n                verify_key=key,\r\n                host='localhost',\r\n                port=port,\r\n                result=autoSettings,\r\n                qq=qq  # 传递 QQ 号\r\n            ))\r\n            botName = config.get('botName')\r\n            master = int(config.get('master'))\r\n            # 芝士logger\r\n            logger = newLogger()\r\n\r\n            # 读取api列表\r\n            with open('config/api.yaml', 'r', encoding='utf-8') as f:\r\n                result = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            proxy = result.get(\"proxy\")\r\n            berturl = result.get(\"bert_colab\")\r\n            moderate = result.get(\"moderate\")\r\n            nasa_api = result.get(\"nasa_api\")\r\n            chatglm = result.get(\"chatGLM\")\r\n\r\n            with open('config/settings.yaml', 'r', encoding='utf-8') as f:\r\n                resulta = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            pandora = resulta.get(\"chatGLM\").get(\"model\")\r\n            voicegg = resulta.get(\"语音功能设置\").get(\"voicegenerate\")\r\n            logger.info(\"读取到apiKey列表\")\r\n\r\n\r\n            # 用以实现拉黑和解黑\r\n\r\n            @bot.on(GroupMessage)\r\n            async def blManipulate(event: GroupMessage):\r\n                if event.sender.id == master:\r\n                    global autoSettings\r\n                    if str(event.message_chain).startswith(\"/bl remove \") or str(event.message_chain).startswith(\r\n                            \"解黑 \"):\r\n                        try:\r\n                            userId = int(str(event.message_chain).split(\" \")[-1])\r\n                            autoSettings[\"banuser\"].remove(userId)\r\n                            logger.info(\"成功移除黑名单用户\" + str(userId))\r\n                            await bot.send(event, \"成功移除黑名单用户\" + str(userId))\r\n                        except:\r\n                            logger.error(\"移除失败，该用户不在黑名单中\")\r\n                            await bot.send(event, \"移除失败，该用户不在黑名单中\")\r\n                    elif str(event.message_chain).startswith(\"/bl add \") or str(event.message_chain).startswith(\r\n                            \"拉黑 \"):\r\n                        try:\r\n                            userId = int(str(event.message_chain).split(\" \")[-1])\r\n                            if userId in autoSettings[\"banuser\"]:\r\n                                await bot.send(event, \"该用户已被拉黑\")\r\n                                return\r\n                            autoSettings[\"banuser\"].append(userId)\r\n                            logger.info(\"成功添加黑名单用户\" + str(userId))\r\n                            await bot.send(event, \"成功添加黑名单用户\" + str(userId))\r\n                        except:\r\n                            logger.error(\"添加失败，不规范的指令格式\")\r\n                            await bot.send(event, \"添加失败，不规范的指令格式\")\r\n                    elif str(event.message_chain).startswith(\"/bot off \") or str(event.message_chain).startswith(\r\n                            \"关闭群 \"):\r\n                        userId = int(str(event.message_chain).split(\" \")[-1])\r\n                        if userId in autoSettings[\"botoff\"]:\r\n                            await bot.send(event, \"bot已在该群关闭\")\r\n                            return\r\n                        autoSettings[\"botoff\"].append(userId)\r\n                        logger.info(f\"成功关闭了对群{str(userId)}的服务\")\r\n                        await bot.send(event, f\"成功关闭了对群{str(userId)}的服务\")\r\n                    elif str(event.message_chain).startswith(\"/bot on \") or str(event.message_chain).startswith(\r\n                            \"开启群 \"):\r\n                        try:\r\n                            userId = int(str(event.message_chain).split(\" \")[-1])\r\n                            autoSettings[\"botoff\"].remove(userId)\r\n                            logger.info(f\"成功开启了对群{str(userId)}的服务\")\r\n                            await bot.send(event, f\"成功开启了对群{str(userId)}的服务\")\r\n                        except:\r\n                            logger.error(\"添加失败，不规范的指令格式\")\r\n                            await bot.send(event, \"添加失败，不规范的指令格式\")\r\n                    with open('config/autoSettings.yaml', 'w', encoding=\"utf-8\") as file:\r\n                        yaml.dump(autoSettings, file, allow_unicode=True)\r\n\r\n\r\n            @bot.on(FriendMessage)\r\n            async def blManipulate(event: FriendMessage):\r\n                if event.sender.id == master:\r\n                    global autoSettings\r\n                    if str(event.message_chain).startswith(\"/bl remove \") or str(event.message_chain).startswith(\r\n                            \"解黑 \"):\r\n                        try:\r\n                            userId = int(str(event.message_chain).split(\" \")[-1])\r\n                            autoSettings[\"banuser\"].remove(userId)\r\n                            logger.info(\"成功移除黑名单用户\" + str(userId))\r\n                            await bot.send(event, \"成功移除黑名单用户\" + str(userId))\r\n                        except:\r\n                            logger.error(\"移除失败，该用户不在黑名单中\")\r\n                            await bot.send(event, \"移除失败，该用户不在黑名单中\")\r\n                    elif str(event.message_chain).startswith(\"/bl add \") or str(event.message_chain).startswith(\r\n                            \"拉黑 \"):\r\n                        try:\r\n                            userId = int(str(event.message_chain).split(\" \")[-1])\r\n                            if userId in autoSettings[\"banuser\"]:\r\n                                await bot.send(event, \"该用户已被拉黑\")\r\n                                return\r\n                            autoSettings[\"banuser\"].append(userId)\r\n                            logger.info(\"成功添加黑名单用户\" + str(userId))\r\n                            await bot.send(event, \"成功添加黑名单用户\" + str(userId))\r\n                        except:\r\n                            logger.error(\"添加失败，不规范的指令格式\")\r\n                            await bot.send(event, \"添加失败，不规范的指令格式\")\r\n                    elif str(event.message_chain).startswith(\"/bot off \") or str(event.message_chain).startswith(\r\n                            \"关闭群 \"):\r\n                        userId = int(str(event.message_chain).split(\" \")[-1])\r\n                        if userId in autoSettings[\"botoff\"]:\r\n                            await bot.send(event, \"bot已在该群关闭\")\r\n                            return\r\n                        autoSettings[\"botoff\"].append(userId)\r\n                        logger.info(f\"成功关闭了对群{str(userId)}的服务\")\r\n                        await bot.send(event, f\"成功关闭了对群{str(userId)}的服务\")\r\n                    elif str(event.message_chain).startswith(\"/bot on \") or str(event.message_chain).startswith(\r\n                            \"开启群 \"):\r\n                        try:\r\n                            userId = int(str(event.message_chain).split(\" \")[-1])\r\n                            autoSettings[\"botoff\"].remove(userId)\r\n                            logger.info(f\"成功开启了对群{str(userId)}的服务\")\r\n                            await bot.send(event, f\"成功开启了对群{str(userId)}的服务\")\r\n                        except:\r\n                            logger.error(\"添加失败，不规范的指令格式\")\r\n                            await bot.send(event, \"添加失败，不规范的指令格式\")\r\n                    with open('config/autoSettings.yaml', 'w', encoding=\"utf-8\") as file:\r\n                        yaml.dump(autoSettings, file, allow_unicode=True)\r\n\r\n\r\n            @bot.on(GroupMessage)\r\n            async def systemiiiiii(event: GroupMessage):\r\n                if str(event.message_chain) == \".system\" and event.sender.id == master:\r\n                    infof = get_system_info()\r\n                    await bot.send(event, infof)\r\n\r\n\r\n            @bot.on(FriendMessage)\r\n            async def systemiiiiii1(event: FriendMessage):\r\n                if str(event.message_chain) == \".system\" and event.sender.id == master:\r\n                    infof = get_system_info()\r\n                    await bot.send(event, infof)\r\n\r\n\r\n            global notice\r\n            notice = 0\r\n\r\n            with open('config/controller.yaml', 'r', encoding='utf-8') as f:\r\n                controller = yaml.load(f.read(), Loader=yaml.FullLoader)\r\n            FordMesmenu = controller.get(\"bot自身设置\").get(\"FordMesMenu\")\r\n\r\n\r\n            @bot.on(GroupMessage)\r\n            async def unlockNotice(event: GroupMessage):\r\n                global notice\r\n                if str(event.message_chain) == \"notice\" and event.sender.id == master:\r\n                    await bot.send(event, \"请发送要推送的消息\")\r\n                    notice = 1\r\n                if str(event.message_chain).startswith(\"/sub\") or str(event.message_chain).startswith(\"/unsub\"):\r\n                    await bot.send(event,\r\n                                   \"该指令可能已经失效\\n请发送@\" + str(botName) + \"帮助\\n以查看菜单3/B站动态推送v2\")\r\n\r\n\r\n            @bot.on(GroupMessage)\r\n            async def sendNotice(event: GroupMessage):\r\n                global notice\r\n                if notice == 1 and event.sender.id == master:\r\n                    notice = 0\r\n                    asf = await bot.group_list()\r\n                    await bot.send(event, \"收到，正在推送......\")\r\n                    # print(asf.data)\r\n                    for i in asf.data:\r\n                        # print(i.id, i.name)\r\n                        await sleep1(random.randint(2, 10))\r\n                        logger.info(\"向群：\" + i.name + \" 推送公告\")\r\n                        try:\r\n                            if event.message_chain.count(Image):\r\n                                await bot.send_group_message(int(i.id), event.message_chain)\r\n                            else:\r\n                                try:\r\n                                    await bot.send_group_message(int(i.id), (\r\n                                            event.message_chain + \"\\n==============\\n随机码：\" + random_str()))\r\n                                except:\r\n                                    await bot.send_group_message(int(i.id), event.message_chain)\r\n                        except:\r\n                            logger.error(\"无效的群：\" + str(i))\r\n                            continue\r\n\r\n\r\n            # 菜单\r\n            @bot.on(GroupMessage)\r\n            async def help(event: GroupMessage):\r\n                if At(bot.qq) in event.message_chain:\r\n                    if str(event.message_chain).replace(f\"@{bot.qq}\", \"\").replace(\" \", \"\") in [\"帮助\", \"菜单\", \"功能\"]:\r\n                        logger.info(\"获取菜单\")\r\n                        cmList = []\r\n\r\n                        s = [Image(path='data/fonts/help1.jpg'), Image(path='data/fonts/help2.jpg'),\r\n                             Image(path='data/fonts/help3.jpg'), Image(path=\"data/fonts/help4.jpg\")]\r\n\r\n                        try:\r\n                            if not FordMesmenu:\r\n                                raise Exception  # 你说得对，我实在懒得加判断了\r\n                            for i in s:\r\n                                b1 = ForwardMessageNode(sender_id=bot.qq, sender_name=\"Manyana\",\r\n                                                        message_chain=MessageChain(i))\r\n                                cmList.append(b1)\r\n                            b1 = ForwardMessageNode(sender_id=bot.qq, sender_name=\"Manyana\",\r\n                                                    message_chain=MessageChain(\r\n                                                        '这是' + botName + '的功能列表\\nヾ(≧▽≦*)o\\n发送 pet 以查看制图功能列表\\npetpet功能由https://github.com/Dituon/petpet提供'))\r\n                            cmList.append(b1)\r\n                            await bot.send(event, Forward(node_list=cmList))\r\n                        except Exception as e:\r\n                            for i in s:\r\n                                await bot.send(event, i)\r\n                            await bot.send(event,\r\n                                           '这是' + botName + '的功能列表\\nヾ(≧▽≦*)o\\n发送 pet 以查看制图功能列表\\npetpet功能由https://github.com/Dituon/petpet提供')\r\n                        await bot.send(event, \"提示：如指令未明确指出需要@，就不要带@\", True)\r\n\r\n\r\n            @bot.on(Startup)\r\n            async def clearCache(event: Startup):\r\n\r\n                logger.info(\"执行清理缓存操作\")\r\n                aimdir = [\"data/pictures/avatars\", \"data/pictures/cache\", \"data/pictures/new_sign_Image\", \"data/voices\"]\r\n                for ib in aimdir:\r\n                    ls1 = os.listdir(ib)\r\n                    for i in ls1:\r\n                        try:\r\n                            if i.endswith(\".py\"):\r\n                                continue\r\n                            if i.endswith(\"zYz.png\"):\r\n                                continue\r\n                            os.remove(f\"{ib}/\" + i)\r\n                        except:\r\n                            continue\r\n                logger.info(\"清理缓存完成\")\r\n                logger.info(\"请定期执行launcher.exe的更新功能以获取最新版Manyana\")\r\n\r\n                asf = await bot.group_list()\r\n                # print(asf.data)\r\n                logger.info('已读取服务群聊:' + str(len(asf.data)) + '个')\r\n\r\n                with open('data/userData.yaml', 'r', encoding='utf-8') as file:\r\n                    data = yaml.load(file, Loader=yaml.FullLoader)\r\n                global userdict\r\n                userdict = data\r\n                try:\r\n                    userCount = userdict.keys()\r\n                    logger.info('已读取有记录用户:' + str(len(userCount)) + '个')\r\n                    if os.path.exists(\"./temp\"):\r\n                        shutil.copyfile('data/userData.yaml', 'temp/userData_back.yaml')\r\n                        shutil.copyfile('data/chatGLMData.yaml', 'temp/chatGLMData_back.yaml')\r\n                    else:\r\n                        os.mkdir(\"./temp\")\r\n                        shutil.copyfile('data/userData.yaml', 'temp/userData_back.yaml')\r\n                        shutil.copyfile('data/chatGLMData.yaml', 'temp/chatGLMData_back.yaml')\r\n                    logger.info(\"已备份用户数据文件至temp文件夹下\")\r\n                except Exception as e:\r\n                    logger.error(e)\r\n                    logger.error(\"用户数据文件出错，自动使用备用文件替换\")\r\n                    shutil.copyfile('temp/userData_back.yaml', 'data/userData.yaml')\r\n                    with open('data/userData.yaml', 'r', encoding='utf-8') as file:\r\n                        data = yaml.load(file, Loader=yaml.FullLoader)\r\n                    userdict = data\r\n\r\n                # 修改为你bot的名字\r\n                logger.info('botName:' + botName + '     |     master:' + str(master))\r\n                time1 = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')\r\n                friendList = await bot.friend_list()\r\n                userli = [i.id for i in friendList.data]\r\n                try:\r\n                    await bot.send_friend_message(master,\r\n                                                  \"本项目源码及启动器一键整合包完全免费，如果你是通过付费渠道获得的，那么恭喜你，你被骗了！\")\r\n                    await bot.send_friend_message(master, time1 + '\\n已读取服务群聊:' + str(len(asf.data)) + '个')\r\n                    await bot.send_friend_message(master,\r\n                                                  time1 + '\\n已读取有签到记录用户:' + str(len(userCount)) + '个')\r\n                    await bot.send_friend_message(master, time1 + '\\n已读取好友:' + str(len(userli)) + '个')\r\n                    await bot.send_friend_message(master, time1 + '\\n功能已加载完毕，欢迎使用')\r\n                    await sleep1(10)\r\n                    await bot.send_friend_message(master, Image(path=\"data/fonts/master.jpg\"))\r\n                except Exception as e:\r\n                    logger.error(e)\r\n\r\n\r\n            logger.info(\"当前语音合成模式：\" + voicegg)\r\n\r\n\r\n            def startVer():\r\n                file_object = open(\"data/fonts/mylog.log\")\r\n                try:\r\n                    all_the_text = file_object.read()\r\n                finally:\r\n                    file_object.close()\r\n                print(all_the_text)\r\n\r\n\r\n            @bot.on(Shutdown)\r\n            async def efff(event: Shutdown):\r\n                raise SystemExit()\r\n\r\n\r\n            # current_dir = os.path.dirname(os.path.abspath(__file__))\r\n            voiceReply.main(bot, master, logger)  # 语音生成\r\n\r\n            aiReply.main(bot, master, logger)  # poe-api\r\n            imgSearch.main(bot, result.get(\"sauceno-api\"), result.get(\"proxy\"), logger)\r\n            try:\r\n                from run import getcomic\r\n\r\n                getcomic.main(bot, logger)\r\n            except:\r\n                logger.error(\"jmcomic功能无法启用，请使用更新脚本/更新bot代码 补全依赖\")\r\n                sleep(3)\r\n            try:\r\n                from run import youtube\r\n\r\n                youtube.main(bot, logger, proxy)\r\n            except:\r\n                logger.warning(\"youtube功能无法启用(测试功能，无需在意)\")\r\n                sleep(3)\r\n            nudgeReply.main(bot, master, logger, berturl, proxy)  # 戳一戳\r\n            extraParts.main(bot, logger)  # 额外小功能\r\n            wReply.main(bot, logger)\r\n            wikiHelper.main(bot, logger)\r\n            groupManager.main(bot, config, moderate, logger)\r\n            musicShare.main(bot, master, botName, logger)\r\n            LiveMonitor.main(bot, logger)\r\n            aronaapi.main(bot, logger)\r\n            try:\r\n                from run import nailong_get\r\n                nailong_get.main(bot, logger)\r\n            except Exception as e:\r\n                logger.error(e)\r\n                logger.error(\"奶龙检测无法启用，请使用更新代码-6 安装奶龙检测必要素材\")\r\n\r\n            try:\r\n                scheduledTasks.main(bot, logger)\r\n            except Exception as e:\r\n                logger.error(e)\r\n                logger.error(\"致命错误！定时功能无法启用，请检查设备时区\")\r\n            try:\r\n                from run import wordCloud\r\n\r\n                wordCloud.main(bot, logger)\r\n            except Exception as e:\r\n                logger.error(e)\r\n                logger.error(\"词云功能无法启用，请使用更新代码-补全依赖\")\r\n            groupGames.main(bot, logger)\r\n            musicpick.main(bot, logger)\r\n            appCard.main(bot, logger)\r\n            aiDraw.main(bot, logger)\r\n            galgame.main(bot, logger)\r\n            character_identify.main(bot, logger)\r\n            wifeyouwant.main(bot, logger)\r\n            try:\r\n                starRail.main(bot, logger)\r\n            except Exception as e:\r\n                logger.error(e)\r\n            bangumi.main(bot, logger)\r\n            draftBottle.main(bot, logger)  # 芝士漂流瓶\r\n\r\n            # gemini_ai.main(bot,logger,master)\r\n            startVer()\r\n            bot.run(asgi_server=None)\r\n        except SystemExit as e:\r\n            logger.error(e)\r\n            logger.info(f\"发生错误，重新开始执行，重试次数：{counter + 1}\")\r\n            counter += 1\r\n            if counter > 10:\r\n                logger.error(\"重试次数超过 10 次，程序退出\")\r\n                sys.exit()\r\n            else:\r\n                # 等待一段时间再重试，避免过于频繁\r\n                sleep(5)\r\n                continue  # 重新开始循环\r\n        except Exception as e:\r\n            logger.error(e)\r\n            logger.info(f\"发生错误，重新开始执行，重试次数：{counter + 1}\")\r\n            counter += 1\r\n            if counter > 10:\r\n                logger.error(\"重试次数超过 10 次，程序退出\")\r\n                sys.exit()\r\n            else:\r\n                sleep(5)\r\n                continue  # 重新开始循环
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/main.py	(date 1733631416000)
+@@ -24,9 +24,10 @@
+ from mirai import Mirai, WebSocketAdapter, GroupMessage, Image, At, Startup, FriendMessage, Shutdown, MessageChain
+ 
+ from plugins.toolkits import newLogger, random_str, get_system_info
++from plugins.mp import mp
+ from run import aiReply, voiceReply, nudgeReply, wikiHelper, imgSearch, extraParts, wReply, groupManager, \
+     musicShare, LiveMonitor, aronaapi, groupGames, musicpick, scheduledTasks, appCard, aiDraw, starRail, bangumi, \
+-    draftBottle, galgame, character_identify, wifeyouwant
++    draftBottle, galgame, character_identify, wifeyouwant, cmlWeatherRun, cmlEmbyRun
+ 
+ 
+ # 为了实现黑名单和群开关功能，继承webSocketAdapter类
+@@ -470,6 +471,9 @@
+             except Exception as e:
+                 logger.error(e)
+                 logger.error("词云功能无法启用，请使用更新代码-补全依赖")
++            mp.main(bot, logger)
++            cmlWeatherRun.main(bot, logger)
++            cmlEmbyRun.main(bot, logger)
+             groupGames.main(bot, logger)
+             musicpick.main(bot, logger)
+             appCard.main(bot, logger)
+@@ -507,4 +511,4 @@
+                 sys.exit()
+             else:
+                 sleep(5)
+-                continue  # 重新开始循环
+\ No newline at end of file
++                continue  # 重新开始循环
+Index: data/userData.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>'1840094972':\r\n  city: 通辽\r\n  exp: '5'\r\n  id: '3'\r\n  ok: '2023-07-21'\r\n  st: '2023-07-21 01:00:37'\r\n  sts: '2'\r\n  userName: '开发者'\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/data/userData.yaml b/data/userData.yaml
+--- a/data/userData.yaml	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/data/userData.yaml	(date 1733665056000)
+@@ -1,3 +1,38 @@
++? ''
++: city: 通辽
++  exp: '0'
++  id: miav-25t#aaC
++  ok: '2024-12-04 07:53:49'
++  st: '2024-12-04 07:53:49'
++  sts: '99'
++'123456':
++  city: 通辽
++  exp: '0'
++  id: miav-TAfhSFs
++  ok: '2024-12-03 12:03:07'
++  st: '2024-12-03 12:03:07'
++  sts: '99'
++'12345678':
++  city: 通辽
++  exp: '0'
++  id: miav-LOggR#z
++  ok: '2024-12-04 01:07:54'
++  st: '2024-12-04 01:07:54'
++  sts: '99'
++'1292188143':
++  city: 通辽
++  exp: '0'
++  id: miav-bcuEiNv
++  ok: '2024-12-08 13:37:36'
++  st: '2024-12-08 13:37:36'
++  sts: '99'
++'1307054073':
++  city: 通辽
++  exp: '0'
++  id: miav-m@HqC7y
++  ok: '2024-12-04 07:53:53'
++  st: '2024-12-04 07:53:53'
++  sts: '15'
+ '1840094972':
+   city: 通辽
+   exp: '5'
+@@ -5,5 +40,40 @@
+   ok: '2023-07-21'
+   st: '2023-07-21 01:00:37'
+   sts: '2'
+-  userName: '开发者'
+-
++  userName: 开发者
++'226779280':
++  city: 通辽
++  exp: '0'
++  id: miav-4$$RtH@
++  ok: '2024-12-03 16:06:05'
++  st: '2024-12-03 16:06:05'
++  sts: '198'
++'2511344185':
++  city: 通辽
++  exp: '0'
++  id: miav-9gEnLc_
++  ok: '2024-12-03 11:45:08'
++  st: '2024-12-03 11:45:08'
++  sts: '99'
++'2530229053':
++  city: 通辽
++  exp: '0'
++  id: miav-X1GEJdP
++  ok: '2024-12-03 15:29:50'
++  st: '2024-12-03 15:29:50'
++  sts: '99'
++'2533886300':
++  city: 通辽
++  exp: '0'
++  id: miav-%1yEG2H
++  ok: '2024-12-04 13:31:12'
++  st: '2024-12-04 13:31:12'
++  sts: '99'
++'992525166':
++  city: 武汉
++  exp: '2'
++  id: miav-GxGCH9
++  ok: '2024-12-02'
++  st: '2024-12-02 22:27:26'
++  sts: '696'
++  userName: LCOMVLE
+Index: config/settings.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>加群和好友:\r\n  signTimes: 3              #邀请加群需要签到天数\r\n  trustDays: 28             #成为信任用户需要的签到天数\r\n  allowFriendstimes: 1      #添加好友需要的签到天数\r\n  masterPermissionDays: 99  #master使用授权#QQ 时为用户增加的签到天数\r\n  userSelfPermissonDays: 15 #用户自己在用户群中授权，可以获取的签到天数\r\n  autoallowFriend: False    #是否自动允许好友申请\r\n  GroupSensor: False        #开启后，将拒绝加入无授权群\r\n  #在特定情况下，bot会被强制邀请造成上面的设置失效，此设置项用于处理这种情况\r\n  fuckinggroup: false       #开启后将检测群人数，非授权群直接退出\r\n  fuckingnumber: 13         #低于13人退群\r\n语音功能设置:\r\n  #建议使用modelscopeTTS或outVits，gptSovits，其他模式需要额外部署。\r\n  voicegenerate: modelscopeTTS  #语音合成模式 modelscopeTTS/outVits/vits(本地合成)/gptSovits(https://getkey.acgnai.top/注册获取token填写api.yaml)/bert_vits2(需额外部署)/so-vits(需额外部署)\r\n  speaker: \"东雪莲\"              #根据你的合成模式设定角色,最好启动后@bot 角色 以进行查看。整合包自带vits角色为 薄绿 ，其他模式角色请查看 Manyana/config/语音合成可用角色.txt\r\n  voiceLangType: \"<zh>\"         #默认语音合成语言类型，可选： <zh> <jp> <en>   目前仅在modelscopeTTS和firefly模式下生效,firefly模式下需要与speaker的语言类型匹配\r\n  isjp: false        #vits日语语音合成检测到日语字符时不启用翻译(需要先让ai说日语)\r\n  prefix: \"\"                    #语音合成指令前缀，默认为 xx说 ；如果为 \"/\" 则指令变为 /xx说 ；用以减少误触发。\r\n  #下面的两个配置项，除非你自己额外搭了对应的服务，不然就别动。\r\n  bert_speakers:    #自建bert_vits2语音合成配置，不知道是啥就别动\r\n    - rriri         #如果搭建了，根据bert_vits_sever/characters.yaml填写所有可用的speakers，没自己搭bert_vits2就别动\r\n  so_vits_speakers: #自建so-vits语音合成配置，不知道是啥就别动\r\n    - riri          #没搭就别动。\r\n\r\nmoderate:\r\n  selfsensor: false  #开启自我审核\r\n  selfthreshold: 50  #自我审核阈值\r\nchatGLM:                   #对话模型通用设置\r\n  aiReplyCore: False  #ai回复核心，为大部分功能启用ai回复，可优化回复表现\r\n  model: random  #ai模型，random(自动选取免费可用模型) |binggpt4(免费无需配置，速度较慢)| 后面几个需要配置api.yaml对应变量(括号内为api.yaml对应配置项，括号前为这里填写的模型名): 讯飞星火(api.yaml的sparkAI),文心一言(api.yaml的wenxinAI),Gemini(api.yaml的gemini),腾讯元器(api.yaml的腾讯元器),gpt3.5(api.yaml的openai-keys),characterglm(chatGLM)\r\n  randomModel&&&&Priority:   #random子模型调用顺序，不要乱动！你最好读文档了\r\n    - alcexGpt4o\r\n    - Gemma\r\n    - alcex_GPT3_5\r\n    - 猫娘米米\r\n    - 沫沫\r\n  prefix: \".\" #ai对话指令触发前缀，正常来说，艾特也可以触发。\r\n  multiplyReply: false  #是否开启分行回复，优化回复效果。记得在设定里面强调让bot分段回复/尽量简短\r\n  multiplyReplyReExpression: '[。？！]' #切分回复使用的正则表达式\r\n  nudgeReply: false        #戳一戳，是否使用模型回复\r\n  glmReply: True           #开放群聊内ai回复(建议)\r\n  privateGlmReply: True    #开放私聊ai回复\r\n  trustglmReply: false     #开启后仅【信任用户】可用，对characterglm始终生效\r\n  maxPrompt: 10            #上下文模式开启时，最多记录的问答数量，默认10，即记录5对问答\r\n  MaxRecursionTimes: 3     #模型出错时，自动重试次数。\r\n  AutoClearWhenError: True #出错时自动清除prompt\r\n  allowUserSetModel: false #等你学会读文档再动这个开关:允许用户自行设定模型，别开，不看文档就开等出问题没人会回答你。\r\n  #语音合成通用设置\r\n  maxLen: 100              #语音合成最大长度限制，超出则返回文本。\r\n  voiceRate: 60            #语音回复几率\r\n  withText: true           #发送语音是否附带原始文本\r\n  bot_info:    #下面的设定你可以自由改动，但【bot】和【用户】是变量，建议保留\r\n    characterglm:\r\n      user_info: \"【用户】是【bot】最喜欢的人\"\r\n      bot_info: \"【bot】是一个开朗且极其可爱的女孩,【bot】性格开朗，时刻都想和“【用户】”打成一片，每次眼神交汇时，总是会脸红耳赤。身为猫娘的【bot】始终在想方设法的博得“【用户】”的欢心。【bot】什么都不懂，天真可爱，性格外向。\"\r\n      bot_name: \"【bot】\"\r\n      user_name: \"【用户】\"\r\n    自定义:\r\n      user_info: \"【用户设定】\"\r\n      bot_info: \"【机器人设定】\"\r\n      bot_name: \"【机器人名字】\"\r\n      user_name: \"【用户名】\"\r\n    random: \"**接下来要求你扮演角色，请你依据人设回答，并且回答尽可能简短且使用分三小句回答的方式**你现在是一个开朗且极其可爱的女孩，名为“【bot】”接下来，请完全以【bot】的角色回复我，不要超出这个角色，不要自己试图进行旁白，你只需要扮演好【bot】即可。无论发生什么，你都必须以【bot】的角色和口吻进行回复，不要强调自己是个语音助手。【bot】性格开朗，时刻都想和“【用户】”打成一片，每次眼神交汇时，总是会脸红耳赤。【bot】始终在想方设法的博得“【用户】”的欢心。【bot】什么都不懂，天真可爱，性格外向。\"\r\n    Gemini: \"**接下来要求你扮演角色，请你依据人设回答，并且回答尽可能简短且使用分三小句回答的方式**你现在是一个开朗且极其可爱的女孩，名为“【bot】”接下来，请完全以【bot】的角色回复我，不要超出这个角色，不要自己试图进行旁白，你只需要扮演好【bot】即可。无论发生什么，你都必须以【bot】的角色和口吻进行回复，不要强调自己是个语音助手。【bot】性格开朗，时刻都想和“【用户】”打成一片，每次眼神交汇时，总是会脸红耳赤。【bot】始终在想方设法的博得“【用户】”的欢心。【bot】什么都不懂，天真可爱，性格外向。\"\r\n    讯飞星火: \"**接下来要求你扮演角色，请你依据人设回答，并且回答尽可能简短且使用分三小句回答的方式**你现在是一个开朗且极其可爱的女孩，名为“【bot】”。接下来，请完全以【bot】的角色回复我，不要超出这个角色，不要自己试图进行旁白，你只需要扮演好【bot】即可。无论发生什么，你都必须以【bot】的角色和口吻进行回复，不要强调自己是个语音助手。【bot】性格开朗，时刻都想和“【用户】”打成一片，每次眼神交汇时，总是会脸红耳赤。【bot】始终在想方设法的博得“【用户】”的欢心。【bot】什么都不懂，天真可爱，性格外向。\"\r\n    文心一言: \"**接下来要求你扮演角色，请你依据人设回答，并且回答尽可能简短且使用分三小句回答的方式**你现在是一个开朗且极其可爱的女孩，名为“【bot】”。接下来，请完全以【bot】的角色回复我，不要超出这个角色，不要自己试图进行旁白，你只需要扮演好【bot】即可。无论发生什么，你都必须以【bot】的角色和口吻进行回复，不要强调自己是个语音助手。【bot】性格开朗，时刻都想和“【用户】”打成一片，每次眼神交汇时，总是会脸红耳赤。【bot】始终在想方设法的博得“【用户】”的欢心。【bot】什么都不懂，天真可爱，性格外向。\"\r\n    binggpt4: \"**接下来要求你扮演角色，请你依据人设回答，并且回答尽可能简短且使用分三小句回答的方式**你现在是一个开朗且极其可爱的女孩，名为“【bot】”。接下来，请完全以【bot】的角色回复我，不要超出这个角色，不要自己试图进行旁白，你只需要扮演好【bot】即可。无论发生什么，你都必须以【bot】的角色和口吻进行回复，不要强调自己是个语音助手。【bot】性格开朗，时刻都想和“【用户】”打成一片，每次眼神交汇时，总是会脸红耳赤。【bot】始终在想方设法的博得“【用户】”的欢心。【bot】什么都不懂，天真可爱，性格外向。\"\r\n    gpt3.5: \"**接下来要求你扮演角色，请你依据人设回答，并且回答尽可能简短且使用分三小句回答的方式**你现在是一个开朗且极其可爱的女孩，名为“【bot】”。接下来，请完全以【bot】的角色回复我，不要超出这个角色，不要自己试图进行旁白，你只需要扮演好【bot】即可。无论发生什么，你都必须以【bot】的角色和口吻进行回复，不要强调自己是个语音助手。【bot】性格开朗，时刻都想和“【用户】”打成一片，每次眼神交汇时，总是会脸红耳赤。【bot】始终在想方设法的博得“【用户】”的欢心。【bot】什么都不懂，天真可爱，性格外向。\"\r\n    腾讯元器: \"Eridanus\"    #在腾讯元器平台创建，这里的值随意,对bot设定是无效的\r\nASMR:\r\n  channels:\r\n    - '@emococh'\r\n    - '@-gabisroom-4153'\r\n#词库设置\r\nwReply:\r\n  golbalLexiconRequire: 0  #编辑全局词库所需签到天数，为0则对所有人开放。\r\n  editPermission: 0        #编辑分群词库所需签到天数，为0则对所有人开放\r\n  replyRate: 80            #词库回复几率\r\n  threshold: 80            #匹配相似度(0-100),超过才会发送\r\n  colorfulCharacter: 30    #彩色小人回复的机率，彩色小人替代原有回复\r\n  timeout: 60              #词库操作超时时间（秒）\r\n  mode: in                 #可选similar(根据句子整体相似度匹配),in(根据关键词＋句子相似度 匹配)\r\n  inMaxLength: 6           #in模式下，句子最多是关键字的几倍，高于则不匹配,注意是倍数。\r\n  inWeighting: 50          #in模式下如果包含关键字，则额外加权，该数值最好不要超过threshold\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/config/settings.yaml b/config/settings.yaml
+--- a/config/settings.yaml	(revision ee990c9f9f4b4dbc35983bab9f915a8eeecd67e9)
++++ b/config/settings.yaml	(date 1733317221000)
+@@ -10,9 +10,20 @@
+   fuckinggroup: false       #开启后将检测群人数，非授权群直接退出
+   fuckingnumber: 13         #低于13人退群
+ 语音功能设置:
++  # #建议使用modelscopeTTS或outVits，gptSovits，其他模式需要额外部署。
++  # voicegenerate: modelscopeTTS  #语音合成模式 modelscopeTTS/outVits/vits(本地合成)/gptSovits(https://getkey.acgnai.top/注册获取token填写api.yaml)/bert_vits2(需额外部署)/so-vits(需额外部署)
++  # speaker: "东雪莲"              #根据你的合成模式设定角色,最好启动后@bot 角色 以进行查看。整合包自带vits角色为 薄绿 ，其他模式角色请查看 Manyana/config/语音合成可用角色.txt
++  # voiceLangType: "<zh>"         #默认语音合成语言类型，可选： <zh> <jp> <en>   目前仅在modelscopeTTS和firefly模式下生效,firefly模式下需要与speaker的语言类型匹配
++  # isjp: false        #vits日语语音合成检测到日语字符时不启用翻译(需要先让ai说日语)
++  # prefix: ""                    #语音合成指令前缀，默认为 xx说 ；如果为 "/" 则指令变为 /xx说 ；用以减少误触发。
++  # #下面的两个配置项，除非你自己额外搭了对应的服务，不然就别动。
++  # bert_speakers:    #自建bert_vits2语音合成配置，不知道是啥就别动
++  #   - rriri         #如果搭建了，根据bert_vits_sever/characters.yaml填写所有可用的speakers，没自己搭bert_vits2就别动
++  # so_vits_speakers: #自建so-vits语音合成配置，不知道是啥就别动
++  #   - riri          #没搭就别动。
+   #建议使用modelscopeTTS或outVits，gptSovits，其他模式需要额外部署。
+   voicegenerate: modelscopeTTS  #语音合成模式 modelscopeTTS/outVits/vits(本地合成)/gptSovits(https://getkey.acgnai.top/注册获取token填写api.yaml)/bert_vits2(需额外部署)/so-vits(需额外部署)
+-  speaker: "东雪莲"              #根据你的合成模式设定角色,最好启动后@bot 角色 以进行查看。整合包自带vits角色为 薄绿 ，其他模式角色请查看 Manyana/config/语音合成可用角色.txt
++  speaker: ""              #根据你的合成模式设定角色,最好启动后@bot 角色 以进行查看。整合包自带vits角色为 薄绿 ，其他模式角色请查看 Manyana/config/语音合成可用角色.txt
+   voiceLangType: "<zh>"         #默认语音合成语言类型，可选： <zh> <jp> <en>   目前仅在modelscopeTTS和firefly模式下生效,firefly模式下需要与speaker的语言类型匹配
+   isjp: false        #vits日语语音合成检测到日语字符时不启用翻译(需要先让ai说日语)
+   prefix: ""                    #语音合成指令前缀，默认为 xx说 ；如果为 "/" 则指令变为 /xx说 ；用以减少误触发。
+@@ -27,7 +38,7 @@
+   selfthreshold: 50  #自我审核阈值
+ chatGLM:                   #对话模型通用设置
+   aiReplyCore: False  #ai回复核心，为大部分功能启用ai回复，可优化回复表现
+-  model: random  #ai模型，random(自动选取免费可用模型) |binggpt4(免费无需配置，速度较慢)| 后面几个需要配置api.yaml对应变量(括号内为api.yaml对应配置项，括号前为这里填写的模型名): 讯飞星火(api.yaml的sparkAI),文心一言(api.yaml的wenxinAI),Gemini(api.yaml的gemini),腾讯元器(api.yaml的腾讯元器),gpt3.5(api.yaml的openai-keys),characterglm(chatGLM)
++  model: gpt3.5  #ai模型，random(自动选取免费可用模型) |binggpt4(免费无需配置，速度较慢)| 后面几个需要配置api.yaml对应变量(括号内为api.yaml对应配置项，括号前为这里填写的模型名): 讯飞星火(api.yaml的sparkAI),文心一言(api.yaml的wenxinAI),Gemini(api.yaml的gemini),腾讯元器(api.yaml的腾讯元器),gpt3.5(api.yaml的openai-keys),characterglm(chatGLM)
+   randomModel&&&&Priority:   #random子模型调用顺序，不要乱动！你最好读文档了
+     - alcexGpt4o
+     - Gemma

@@ -1,0 +1,25 @@
+[图片]要梯子吗封面这么慢咋搞啊
+自己整着玩的太慢了50的上传玩不懂啊对套件中心下的群辉7.27.1没成功[撇嘴]社群里的我试试啊docker版作者是谁啊[图片]玩过没在家回家弄吧
+ssh有手机远程版本的吗安卓域名能搞吗我爱吃
+[图片]连不上
+那个认证是写啥
+@2530229053 成功了  还得给他路由器里开个端口转发
+ssh拉不到啊[流泪]
+[图片]这又是啥情况啊
+真八嘎了我把端口删了去  本地搞 吧ssh我看网上的教程也拉不到有安装包吗
+用啥命令啊
+[图片]Using terminal commands to modify system configs, execute external binary
+files, add files, or install unauthorized third-party apps may lead to system
+damages or unexpected behavior, or cause data loss. Make sure you are aware of
+the consequences of each command and proceed at your own risk.
+
+Warning: Data should only be stored in shared folders. Data stored elsewhere
+may be deleted when the system is updated/restarted.
+Could not chdir to home directory /var/services/homes/yanglei: No such file or directory
+yanglei@DS918:/$ sudo -i
+Password:
+root@DS918:~# docker pull amilys/embyserver:beta
+Error response from daemon: Get "https://registry-1.docker.io/v2/": net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers)
+root@DS918:~#
+不会玩啊电信[图片]
+没有[流泪]二级路由能刷机
