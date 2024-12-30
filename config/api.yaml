@@ -1,13 +1,13 @@
 # 配置文件，在这里填写api
 
-weatherXinZhi: Sxxxxxxx          #心知天气api   从https://www.seniverse.com/注册获取
-sauceno-api: bxxxxxx             #sauceno搜图api，你可以从https://saucenao.com/user.php注册并获取
+weatherXinZhi: S-OU4j1RN1WTSPDbZ          #心知天气api   从https://www.seniverse.com/注册获取
+sauceno-api: c9c5208857e0513689b66d693bc5308b04be4ffc             #sauceno搜图api，你可以从https://saucenao.com/user.php注册并获取
 moderate: 1xxxxxx                #色图审核api，不能用了，等以后更新
-nasa_api: HSxxxxxxx              #nasa相关天文api 从https://api.nasa.gov/index.html#main-content申请
+nasa_api: eSctHhkY4YDtIWim6fPrwBPVQXyIGHTDGBMgTsbz              #nasa相关天文api 从https://api.nasa.gov/index.html#main-content申请
 
 chatGLM: 69xxxxxxx               #chatGLM的apiKey，从https://open.bigmodel.cn/获取
 gemini:                          #谷歌的gemini api，支持多key，在https://ai.google.dev/tutorials/setup?hl=zh-cn获取，需要配置proxy或GeminiRevProxy，否则无法使用
-  - AIxxxxxxxxxx
+  - AIzaSyByv-tfuV4k5TpvZetArI8wX5sVgKXY4qI
 geminimodel: "gemini-1.5-flash"  #gemini默认的模型，不知道是啥就别动。可切换为gemini-2.0-flash-exp，更好效果。
 openaiSettings:                  #openai官方的apikey
   openai-keys:
