@@ -120,7 +120,7 @@ async def sub_search_copy(name: str, page=1) -> list:
     :return: 搜索结果列表
     """
     # 获取基础配置
-    mp_url = "https://mp.4348662.asia:16384"  # 获取 base_url
+    mp_url = "https://mp.4348663.xyz:16384"  # 获取 base_url
     token = read_token_from_file()
     mp_token = token  # 获取 token
 
@@ -920,7 +920,7 @@ def main(bot, logger):
 
 
 async def fetch_token():
-    url = "https://mp.4348662.asia:16384/api/v1/login/access-token"
+    url = "https://mp.4348663.xyz:16384/api/v1/login/access-token"
     payload = {
         "username": "zhugeyue",
         "password": "zzs123qq"
