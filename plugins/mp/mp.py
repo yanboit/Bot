@@ -56,7 +56,7 @@ async def get_mp_base():
     #         return await response.json()
     token = read_token_from_file()
     json_data = {
-        "baseUrl": "https://mp.4348662.asia:16384",
+        "baseUrl": "https://mp.4348663.xyz:16384",
         "token": token
     }
     return json_data
